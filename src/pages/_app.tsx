@@ -1,27 +1,22 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
+import Layout from '../common/components/elements/layout';
 
 const App = (props: AppProps) => {
   const { Component, pageProps } = props;
 
   return (
-    <>
-      <Head>
-        <title>Spectrum News</title>
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-      </Head>
-
+    <Layout>
       <MantineProvider
         withGlobalStyles
         withNormalizeCSS
         theme={{
-          colorScheme: 'dark',
+          colorScheme: 'light',
         }}
       >
         <Component {...pageProps} />
       </MantineProvider>
-    </>
+    </Layout>
   );
 };
 

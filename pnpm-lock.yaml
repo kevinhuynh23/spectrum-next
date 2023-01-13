@@ -8,6 +8,7 @@ specifiers:
   '@mantine/core': ^5.10.0
   '@mantine/dates': ^5.10.0
   '@mantine/dropzone': ^5.10.0
+  '@mantine/ds': ^5.10.0
   '@mantine/form': ^5.10.0
   '@mantine/hooks': ^5.10.0
   '@mantine/modals': ^5.10.0
@@ -46,6 +47,7 @@ dependencies:
   '@mantine/core': 5.10.0_lbfixegkxal6rwioqxubxet6s4
   '@mantine/dates': 5.10.0_afutlozjtr4cmm2smwl7mxxxdy
   '@mantine/dropzone': 5.10.0_3m53ouna3laykmqkiimzgz4i2m
+  '@mantine/ds': 5.10.0_yfewi7uazu6f2vx3txqkui6zre
   '@mantine/form': 5.10.0_react@18.2.0
   '@mantine/hooks': 5.10.0_react@18.2.0
   '@mantine/modals': 5.10.0_3m53ouna3laykmqkiimzgz4i2m
@@ -400,6 +402,25 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-dropzone: 14.2.3_react@18.2.0
+    dev: false
+
+  /@mantine/ds/5.10.0_yfewi7uazu6f2vx3txqkui6zre:
+    resolution: {integrity: sha512-B2fmkHzO0fGHNsa6UbEyX96o+/jJVFUPUvtsorj9h/pcRaKDGfXwD/n9oplgf7blAmgbvnjRtA2wVUVRzdj8sA==}
+    peerDependencies:
+      '@mantine/core': 5.10.0
+      '@mantine/hooks': 5.10.0
+      '@mantine/prism': 5.10.0
+      '@tabler/icons': '*'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@mantine/core': 5.10.0_lbfixegkxal6rwioqxubxet6s4
+      '@mantine/hooks': 5.10.0_react@18.2.0
+      '@mantine/prism': 5.10.0_3m53ouna3laykmqkiimzgz4i2m
+      '@mantine/utils': 5.10.0_react@18.2.0
+      '@tabler/icons': 1.119.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@mantine/form/5.10.0_react@18.2.0:
