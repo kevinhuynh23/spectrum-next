@@ -1,6 +1,5 @@
 /* eslint-disable react/no-children-prop */
-import { Footer, NavLink } from '@mantine/core';
-import { IconSwitchHorizontal } from '@tabler/icons';
+import { Footer } from '@mantine/core';
 
 const DefaultFooter = () => {
   return <Footer height={''} children={[]} />;

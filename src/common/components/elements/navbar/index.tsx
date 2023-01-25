@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { Navbar, Center, Tooltip, UnstyledButton, createStyles, Stack } from '@mantine/core';
 import {
-  TablerIcon,
+  Icon,
   IconHome2,
   IconGauge,
   IconDeviceDesktopAnalytics,
@@ -11,8 +11,10 @@ import {
   IconSettings,
   IconLogout,
   IconSwitchHorizontal,
-} from '@tabler/icons';
+} from '@tabler/icons-react';
 import { MantineLogo } from '@mantine/ds';
+
+const DEFAULT_STROKE_SIZE = '1.5';
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -38,22 +40,22 @@ const useStyles = createStyles((theme) => ({
 }));
 
 interface NavbarLinkProps {
-  icon: TablerIcon;
+  icon: Icon;
   label: string;
   active?: boolean;
   onClick?(): void;
 }
 
-function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
+const NavbarLink = ({ icon: TablerIcon, label, active, onClick }: NavbarLinkProps) => {
   const { classes, cx } = useStyles();
   return (
     <Tooltip label={label} position="right" transitionDuration={0}>
       <UnstyledButton onClick={onClick} className={cx(classes.link, { [classes.active]: active })}>
-        <Icon stroke={1.5} />
+        <TablerIcon stroke={DEFAULT_STROKE_SIZE} />
       </UnstyledButton>
     </Tooltip>
   );
-}
+};
 
 const mockdata = [
   { icon: IconHome2, label: 'Home' },
