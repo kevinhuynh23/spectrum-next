@@ -1,5 +1,5 @@
 import { createStyles, Text, Title, SimpleGrid, TextInput, Textarea, Button, Group, ActionIcon } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
+import { Icon, IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import { ContactIconsList } from './contactIcons';
 
 const useStyles = createStyles((theme) => ({
@@ -66,13 +66,13 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
+const social: Icon[] = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
 const ContactCard = () => {
   const { classes } = useStyles();
 
   const icons = social.map((Icon, index) => (
     <ActionIcon key={index} size={28} className={classes.social} variant="transparent">
-      <Icon size={22} stroke={1.5} />
+      <Icon size={22} stroke={'1.5'} />
     </ActionIcon>
   ));
 

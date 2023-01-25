@@ -18,7 +18,7 @@ const App = (props: AppProps) => {
       withGlobalStyles
       withNormalizeCSS
       theme={{
-        colorScheme: 'light',
+        colorScheme: 'dark',
       }}
     >
       <AppShell padding="md" header={<HeaderAction links={links} />} navbar={<NavbarMinimal />}>
