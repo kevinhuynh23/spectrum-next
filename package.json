@@ -22,7 +22,7 @@
     "@mantine/dropzone": "^5.10.0",
     "@mantine/ds": "^5.10.0",
     "@mantine/form": "^6.0.1",
-    "@mantine/hooks": "^5.10.0",
+    "@mantine/hooks": "^6.0.1",
     "@mantine/modals": "^5.10.0",
     "@mantine/next": "^6.0.1",
     "@mantine/notifications": "^5.10.0",
