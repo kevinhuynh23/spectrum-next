@@ -26,7 +26,7 @@
     "@mantine/modals": "^5.10.0",
     "@mantine/next": "^6.0.1",
     "@mantine/notifications": "^5.10.0",
-    "@mantine/nprogress": "^5.10.0",
+    "@mantine/nprogress": "^6.0.1",
     "@mantine/prism": "^6.0.1",
     "@mantine/spotlight": "^5.10.0",
     "@mantine/tiptap": "^5.10.0",
