@@ -29,7 +29,7 @@
     "@mantine/nprogress": "^6.0.1",
     "@mantine/prism": "^6.0.1",
     "@mantine/spotlight": "^6.0.1",
-    "@mantine/tiptap": "^5.10.0",
+    "@mantine/tiptap": "^6.0.1",
     "@next/font": "13.2.4",
     "@tabler/icons": "^2.0.0",
     "@tabler/icons-react": "^2.0.0",
