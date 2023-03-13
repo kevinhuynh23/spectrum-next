@@ -18,7 +18,7 @@
     "@floating-ui/react": "^0.21.0",
     "@mantine/carousel": "^5.10.0",
     "@mantine/core": "^5.10.0",
-    "@mantine/dates": "^5.10.0",
+    "@mantine/dates": "^6.0.1",
     "@mantine/dropzone": "^5.10.0",
     "@mantine/ds": "^6.0.1",
     "@mantine/form": "^6.0.1",
