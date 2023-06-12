@@ -13,7 +13,7 @@
     "@apollo/client": "^3.7.4",
     "@apollo/server": "^4.3.0",
     "@babel/core": "^7.20.12",
-    "@emotion/react": "^11.10.5",
+    "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.10.0",
     "@floating-ui/react": "^0.24.0",
     "@mantine/carousel": "^6.0.1",
