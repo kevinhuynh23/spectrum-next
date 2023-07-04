@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@apollo/client':
     specifier: ^3.7.4
@@ -62,8 +66,8 @@ dependencies:
     specifier: ^6.0.1
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.22.0)(@tiptap/extension-link@2.0.3)(@tiptap/react@2.0.3)(react@18.2.0)
   '@next/font':
-    specifier: 13.4.4
-    version: 13.4.4
+    specifier: 13.4.8
+    version: 13.4.8
   '@tabler/icons':
     specifier: ^2.0.0
     version: 2.0.0
@@ -1374,8 +1378,8 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /@next/font@13.4.4:
-    resolution: {integrity: sha512-iYmL/O0rV9NS8a2UXuRoZOzImz8Q0mM8bAmxtj8nccrpwZ6iOOZlbf2d0Genczl4wtuXRXVPR8goGjJM4C2SDg==}
+  /@next/font@13.4.8:
+    resolution: {integrity: sha512-LQ/58mU8N0FDfNGbre1JeL9WAOup10TIy8Nr8P+gX+OKigLok21kxAj8Bi4pxNqfs31ePsdIpzr52WN1dZlPWg==}
     dev: false
 
   /@next/swc-darwin-arm64@13.4.4:
