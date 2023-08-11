@@ -15,7 +15,7 @@
     "@babel/core": "^7.22.9",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
-    "@floating-ui/react": "^0.25.0",
+    "@floating-ui/react": "^0.25.1",
     "@mantine/carousel": "^6.0.1",
     "@mantine/core": "^6.0.2",
     "@mantine/dates": "^6.0.1",

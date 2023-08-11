@@ -21,8 +21,8 @@ dependencies:
     specifier: ^11.11.0
     version: 11.11.0
   '@floating-ui/react':
-    specifier: ^0.25.0
-    version: 0.25.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.25.1
+    version: 0.25.1(react-dom@18.2.0)(react@18.2.0)
   '@mantine/carousel':
     specifier: ^6.0.1
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(embla-carousel-react@7.1.0)(react@18.2.0)
@@ -834,15 +834,14 @@ packages:
       tabbable: 6.0.1
     dev: false
 
-  /@floating-ui/react@0.25.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-0ulipo5ZTmCpTlVPjIbLyqReO7S3gwyQSiIm0TjKU5LPN97BmMZ2crJZcNMQ4GZz/V4qurMibGl4z3+TjF5tRA==}
+  /@floating-ui/react@0.25.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-lxuWxfSgDJwOeZK07PIDjTSlH0CY6LRDKo6eI0H7TnctP+5IAn0n8+npNveM0L2wNIVdAr0S8RvvoHfhzPbBAQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
       '@floating-ui/react-dom': 2.0.1(react-dom@18.2.0)(react@18.2.0)
       '@floating-ui/utils': 0.1.1
-      aria-hidden: 1.2.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tabbable: 6.0.1
