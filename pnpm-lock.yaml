@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@apollo/client':
-    specifier: ^3.7.17
-    version: 3.7.17(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^3.8.1
+    version: 3.8.1(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0)
   '@apollo/server':
     specifier: ^4.9.1
     version: 4.9.1(graphql@16.7.1)
@@ -196,8 +196,8 @@ packages:
       graphql: 16.7.1
     dev: false
 
-  /@apollo/client@3.7.17(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-0EErSHEtKPNl5wgWikHJbKFAzJ/k11O0WO2QyqZSHpdxdAnw7UWHY4YiLbHCFG7lhrD+NTQ3Z/H9Jn4rcikoJA==}
+  /@apollo/client@3.8.1(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-JGGj/9bdoLEqzatRikDeN8etseY5qeFAY0vSAx/Pd0ePNsaflKzHx6V2NZ0NsGkInq+9IXXX3RLVDf0EotizMA==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
       graphql-ws: ^5.5.5
@@ -215,13 +215,13 @@ packages:
         optional: true
     dependencies:
       '@graphql-typed-document-node/core': 3.1.1(graphql@16.7.1)
-      '@wry/context': 0.7.0
-      '@wry/equality': 0.5.3
+      '@wry/context': 0.7.3
+      '@wry/equality': 0.5.6
       '@wry/trie': 0.4.3
       graphql: 16.7.1
       graphql-tag: 2.12.6(graphql@16.7.1)
       hoist-non-react-statics: 3.3.2
-      optimism: 0.16.2
+      optimism: 0.17.5
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2048,22 +2048,15 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: true
 
-  /@wry/context@0.7.0:
-    resolution: {integrity: sha512-LcDAiYWRtwAoSOArfk7cuYvFXytxfVrdX7yxoUmK7pPITLk5jYh2F8knCwS7LjgYL8u1eidPlKKV6Ikqq0ODqQ==}
+  /@wry/context@0.7.3:
+    resolution: {integrity: sha512-Nl8WTesHp89RF803Se9X3IiHjdmLBrIvPMaJkl+rKVJAYyPsz1TEUbu89943HpvujtSJgDUx9W4vZw3K1Mr3sA==}
     engines: {node: '>=8'}
     dependencies:
       tslib: 2.4.1
     dev: false
 
-  /@wry/equality@0.5.3:
-    resolution: {integrity: sha512-avR+UXdSrsF2v8vIqIgmeTY0UR91UT+IyablCyKe/uk22uOJ8fusKZnH9JH9e1/EtLeNJBtagNmL3eJdnOV53g==}
-    engines: {node: '>=8'}
-    dependencies:
-      tslib: 2.4.1
-    dev: false
-
-  /@wry/trie@0.3.2:
-    resolution: {integrity: sha512-yRTyhWSls2OY/pYLfwff867r8ekooZ4UI+/gxot5Wj8EFwSf2rG+n+Mo/6LoLQm1TKA4GRj2+LCpbfS937dClQ==}
+  /@wry/equality@0.5.6:
+    resolution: {integrity: sha512-D46sfMTngaYlrH+OspKf8mIJETntFnf6Hsjb0V41jAXJ7Bx2kB8Rv8RCUujuVWYttFtHkUNp7g+FwxNQAr6mXA==}
     engines: {node: '>=8'}
     dependencies:
       tslib: 2.4.1
@@ -4418,11 +4411,12 @@ packages:
       is-wsl: 2.2.0
     dev: true
 
-  /optimism@0.16.2:
-    resolution: {integrity: sha512-zWNbgWj+3vLEjZNIh/okkY2EUfX+vB9TJopzIZwT1xxaMqC5hRLLraePod4c5n4He08xuXNH+zhKFFCu390wiQ==}
+  /optimism@0.17.5:
+    resolution: {integrity: sha512-TEcp8ZwK1RczmvMnvktxHSF2tKgMWjJ71xEFGX5ApLh67VsMSTy1ZUlipJw8W+KaqgOmQ+4pqwkeivY89j+4Vw==}
     dependencies:
-      '@wry/context': 0.7.0
-      '@wry/trie': 0.3.2
+      '@wry/context': 0.7.3
+      '@wry/trie': 0.4.3
+      tslib: 2.4.1
     dev: false
 
   /optionator@0.9.3:
