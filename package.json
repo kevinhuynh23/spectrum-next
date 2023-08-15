@@ -43,7 +43,7 @@
     "dayjs": "^1.11.9",
     "embla-carousel-react": "^7.1.0",
     "graphql": "^16.7.1",
-    "next": "13.4.13",
+    "next": "13.4.16",
     "prop-types": "^15.7.2",
     "prosemirror-commands": "^1.5.2",
     "prosemirror-dropcursor": "^1.8.1",
