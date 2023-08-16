@@ -64,7 +64,7 @@ dependencies:
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/tiptap':
     specifier: ^6.0.1
-    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.30.0)(@tiptap/extension-link@2.0.4)(@tiptap/react@2.0.4)(react@18.2.0)
+    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.30.0)(@tiptap/extension-link@2.0.4)(@tiptap/react@2.1.0)(react@18.2.0)
   '@next/font':
     specifier: 13.4.16
     version: 13.4.16
@@ -81,8 +81,8 @@ dependencies:
     specifier: 2.0.4
     version: 2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)
   '@tiptap/react':
-    specifier: 2.0.4
-    version: 2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 2.1.0
+    version: 2.1.0(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
   '@tiptap/starter-kit':
     specifier: 2.0.4
     version: 2.0.4(@tiptap/pm@2.0.3)
@@ -1256,7 +1256,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@mantine/tiptap@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.30.0)(@tiptap/extension-link@2.0.4)(@tiptap/react@2.0.4)(react@18.2.0):
+  /@mantine/tiptap@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.30.0)(@tiptap/extension-link@2.0.4)(@tiptap/react@2.1.0)(react@18.2.0):
     resolution: {integrity: sha512-V2IXjrgJBXu+JSv3mNTDs5yGtSht5/5P9TE+/ItML0DyP6/xWi5tIXLOtAGn7SivFRfUbR6PZJckcJnSUUpEFA==}
     peerDependencies:
       '@mantine/core': 6.0.13
@@ -1271,7 +1271,7 @@ packages:
       '@mantine/utils': 6.0.13(react@18.2.0)
       '@tabler/icons-react': 2.30.0(react@18.2.0)
       '@tiptap/extension-link': 2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)
-      '@tiptap/react': 2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
+      '@tiptap/react': 2.1.0(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -1652,8 +1652,8 @@ packages:
       '@tiptap/core': 2.0.4(@tiptap/pm@2.0.3)
     dev: false
 
-  /@tiptap/extension-bubble-menu@2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3):
-    resolution: {integrity: sha512-+cRZwj0YINNNDElSAiX1pvY2K98S2j9MQW2dXV5oLqsJhqGPZsKxVo8I1u7ZtqUla3QE1V18RYPAzVgTiMRkBg==}
+  /@tiptap/extension-bubble-menu@2.1.0(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3):
+    resolution: {integrity: sha512-1TLhnrqeYhLcRY9zTrTkA5sVuWWVyf0mRYho+mwe0OUxUiAZkGRpAhtY5LP97eIRU5vQS+/jR02PtE4re1KPCw==}
     peerDependencies:
       '@tiptap/core': ^2.0.0
       '@tiptap/pm': ^2.0.0
@@ -1707,8 +1707,8 @@ packages:
       '@tiptap/pm': 2.0.3(@tiptap/core@2.0.4)
     dev: false
 
-  /@tiptap/extension-floating-menu@2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3):
-    resolution: {integrity: sha512-0YRE738k+kNKuSHhAb3jj9ZQ7Kda78RYRr+cX2jrQVueIMKebPIY07eBt6JcKmob9V9vcNn9qLtBfmygfcPUQg==}
+  /@tiptap/extension-floating-menu@2.1.0(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3):
+    resolution: {integrity: sha512-+iZWgYcGkguC3wWLRaYoSbONwFkGSIWtVEA8dxo5SedgPb+1GUflvbbmdnc1qg6d+2vJAtZ5tFI1XDRNJ23SWg==}
     peerDependencies:
       '@tiptap/core': ^2.0.0
       '@tiptap/pm': ^2.0.0
@@ -1851,8 +1851,8 @@ packages:
       - supports-color
     dev: false
 
-  /@tiptap/react@2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-NcrZL4Tu3+1Xfj/us5AOD7+kJhwYo2XViOB2iRRnfwS80PUtiLWDis6o3ngMGot/jBWzaMn4gofXnMWHtFdIAw==}
+  /@tiptap/react@2.1.0(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-TybbpdLLqnX4SqvETxwRG6LZpoP5Sxl7Zz+NtFpf9UkhfMw9huM9AHmHLeMz1OnwKJ56VPNrmrgaR+cjuGvEQQ==}
     peerDependencies:
       '@tiptap/core': ^2.0.0
       '@tiptap/pm': ^2.0.0
@@ -1860,8 +1860,8 @@ packages:
       react-dom: ^17.0.0 || ^18.0.0
     dependencies:
       '@tiptap/core': 2.0.4(@tiptap/pm@2.0.3)
-      '@tiptap/extension-bubble-menu': 2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)
-      '@tiptap/extension-floating-menu': 2.0.4(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)
+      '@tiptap/extension-bubble-menu': 2.1.0(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)
+      '@tiptap/extension-floating-menu': 2.1.0(@tiptap/core@2.0.4)(@tiptap/pm@2.0.3)
       '@tiptap/pm': 2.0.3(@tiptap/core@2.0.4)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
