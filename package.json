@@ -30,7 +30,7 @@
     "@mantine/prism": "^6.0.1",
     "@mantine/spotlight": "^6.0.1",
     "@mantine/tiptap": "^6.0.1",
-    "@next/font": "13.4.16",
+    "@next/font": "13.4.18",
     "@tabler/icons": "^2.30.0",
     "@tabler/icons-react": "^2.30.0",
     "@tiptap/core": "2.0.4",
