@@ -66,8 +66,8 @@ dependencies:
     specifier: ^6.0.1
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.30.0)(@tiptap/extension-link@2.0.4)(@tiptap/react@2.0.4)(react@18.2.0)
   '@next/font':
-    specifier: 13.4.16
-    version: 13.4.16
+    specifier: 13.4.19
+    version: 13.4.19
   '@tabler/icons':
     specifier: ^2.30.0
     version: 2.30.0
@@ -1293,8 +1293,8 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /@next/font@13.4.16:
-    resolution: {integrity: sha512-1UciFHgwieMfDygileymqeYPEmIeZWIfgrsa2POZlRW+yAsDt0qy0InfFAYvXhNgALTI6ix3JU2XhcuzonhQLA==}
+  /@next/font@13.4.19:
+    resolution: {integrity: sha512-yOuSRYfqksWcaG/sATr1/DEGvvI8gnmAAnQCCZ0+L9p4Pio3/DMu71J56YHh9Hz84LDN4tMVzuux0ssCuM50sA==}
     dev: false
 
   /@next/swc-darwin-arm64@13.4.16:
