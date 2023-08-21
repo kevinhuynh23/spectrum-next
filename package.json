@@ -33,7 +33,7 @@
     "@next/font": "13.4.19",
     "@tabler/icons": "^2.31.0",
     "@tabler/icons-react": "^2.31.0",
-    "@tiptap/core": "2.0.4",
+    "@tiptap/core": "2.1.6",
     "@tiptap/extension-link": "2.1.6",
     "@tiptap/react": "2.1.6",
     "@tiptap/starter-kit": "2.1.6",
