@@ -64,7 +64,7 @@ dependencies:
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/tiptap':
     specifier: ^6.0.1
-    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.32.0)(@tiptap/extension-link@2.1.7)(@tiptap/react@2.1.7)(react@18.2.0)
+    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.32.0)(@tiptap/extension-link@2.1.8)(@tiptap/react@2.1.7)(react@18.2.0)
   '@next/font':
     specifier: 13.4.19
     version: 13.4.19
@@ -78,8 +78,8 @@ dependencies:
     specifier: 2.1.8
     version: 2.1.8(@tiptap/pm@2.0.3)
   '@tiptap/extension-link':
-    specifier: 2.1.7
-    version: 2.1.7(@tiptap/core@2.1.8)(@tiptap/pm@2.0.3)
+    specifier: 2.1.8
+    version: 2.1.8(@tiptap/core@2.1.8)(@tiptap/pm@2.0.3)
   '@tiptap/react':
     specifier: 2.1.7
     version: 2.1.7(@tiptap/core@2.1.8)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
@@ -1292,7 +1292,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@mantine/tiptap@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.32.0)(@tiptap/extension-link@2.1.7)(@tiptap/react@2.1.7)(react@18.2.0):
+  /@mantine/tiptap@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.32.0)(@tiptap/extension-link@2.1.8)(@tiptap/react@2.1.7)(react@18.2.0):
     resolution: {integrity: sha512-V2IXjrgJBXu+JSv3mNTDs5yGtSht5/5P9TE+/ItML0DyP6/xWi5tIXLOtAGn7SivFRfUbR6PZJckcJnSUUpEFA==}
     peerDependencies:
       '@mantine/core': 6.0.13
@@ -1306,7 +1306,7 @@ packages:
       '@mantine/hooks': 6.0.13(react@18.2.0)
       '@mantine/utils': 6.0.13(react@18.2.0)
       '@tabler/icons-react': 2.32.0(react@18.2.0)
-      '@tiptap/extension-link': 2.1.7(@tiptap/core@2.1.8)(@tiptap/pm@2.0.3)
+      '@tiptap/extension-link': 2.1.8(@tiptap/core@2.1.8)(@tiptap/pm@2.0.3)
       '@tiptap/react': 2.1.7(@tiptap/core@2.1.8)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
     dev: false
@@ -1808,8 +1808,8 @@ packages:
       '@tiptap/core': 2.1.8(@tiptap/pm@2.0.3)
     dev: false
 
-  /@tiptap/extension-link@2.1.7(@tiptap/core@2.1.8)(@tiptap/pm@2.0.3):
-    resolution: {integrity: sha512-NDfoMCkThng1B530pMg5y69+eWoghZXK2uCntrJH7Rs8jNeGMyt9wGIOd7N8ZYz0oJ2ZYKzZjS0RANdBDS17DA==}
+  /@tiptap/extension-link@2.1.8(@tiptap/core@2.1.8)(@tiptap/pm@2.0.3):
+    resolution: {integrity: sha512-f3yPNbbo3rNuusEX+Xh/oKUWkq/P1yyVip6ZmtUJVrrG4PFeq/w+f1vEVnlC+uZk3qoC4o8J1DTAOrlrZehx/g==}
     peerDependencies:
       '@tiptap/core': ^2.0.0
       '@tiptap/pm': ^2.0.0
