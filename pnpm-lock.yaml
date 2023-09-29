@@ -37,7 +37,7 @@ dependencies:
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/ds':
     specifier: ^6.0.1
-    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@mantine/prism@6.0.13)(@tabler/icons-react@2.35.0)(react-dom@18.2.0)(react@18.2.0)
+    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@mantine/prism@6.0.13)(@tabler/icons-react@2.37.0)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/form':
     specifier: ^7.0.2
     version: 7.0.2(react@18.2.0)
@@ -64,7 +64,7 @@ dependencies:
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/tiptap':
     specifier: ^6.0.1
-    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.35.0)(@tiptap/extension-link@2.1.11)(@tiptap/react@2.1.11)(react@18.2.0)
+    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.37.0)(@tiptap/extension-link@2.1.11)(@tiptap/react@2.1.11)(react@18.2.0)
   '@next/font':
     specifier: 13.5.3
     version: 13.5.3
@@ -72,8 +72,8 @@ dependencies:
     specifier: ^2.35.0
     version: 2.35.0
   '@tabler/icons-react':
-    specifier: ^2.35.0
-    version: 2.35.0(react@18.2.0)
+    specifier: ^2.37.0
+    version: 2.37.0(react@18.2.0)
   '@tiptap/core':
     specifier: 2.1.11
     version: 2.1.11(@tiptap/pm@2.0.3)
@@ -1084,7 +1084,7 @@ packages:
       react-dropzone: 14.2.3(react@18.2.0)
     dev: false
 
-  /@mantine/ds@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@mantine/prism@6.0.13)(@tabler/icons-react@2.35.0)(react-dom@18.2.0)(react@18.2.0):
+  /@mantine/ds@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@mantine/prism@6.0.13)(@tabler/icons-react@2.37.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-iY1UCPoGlVWRYCdRyQYyoSs3eCfGMH8byOGZLttBbSGfJG0cRw7OuB5QyQZ5LaNr3Mz7f87No9HS5i+x4LtBLg==}
     peerDependencies:
       '@mantine/core': 6.0.13
@@ -1098,7 +1098,7 @@ packages:
       '@mantine/hooks': 6.0.13(react@18.2.0)
       '@mantine/prism': 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/utils': 6.0.13(react@18.2.0)
-      '@tabler/icons-react': 2.35.0(react@18.2.0)
+      '@tabler/icons-react': 2.37.0(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -1259,7 +1259,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@mantine/tiptap@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.35.0)(@tiptap/extension-link@2.1.11)(@tiptap/react@2.1.11)(react@18.2.0):
+  /@mantine/tiptap@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.37.0)(@tiptap/extension-link@2.1.11)(@tiptap/react@2.1.11)(react@18.2.0):
     resolution: {integrity: sha512-V2IXjrgJBXu+JSv3mNTDs5yGtSht5/5P9TE+/ItML0DyP6/xWi5tIXLOtAGn7SivFRfUbR6PZJckcJnSUUpEFA==}
     peerDependencies:
       '@mantine/core': 6.0.13
@@ -1272,7 +1272,7 @@ packages:
       '@mantine/core': 6.0.13(@emotion/react@11.11.1)(@mantine/hooks@6.0.13)(@types/react@18.2.23)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/hooks': 6.0.13(react@18.2.0)
       '@mantine/utils': 6.0.13(react@18.2.0)
-      '@tabler/icons-react': 2.35.0(react@18.2.0)
+      '@tabler/icons-react': 2.37.0(react@18.2.0)
       '@tiptap/extension-link': 2.1.11(@tiptap/core@2.1.11)(@tiptap/pm@2.0.3)
       '@tiptap/react': 2.1.11(@tiptap/core@2.1.11)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
@@ -1617,18 +1617,22 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /@tabler/icons-react@2.35.0(react@18.2.0):
-    resolution: {integrity: sha512-jK2zgtMF2+LSjtbjYsfer+ryz72TwyJqv3MsmCfEpQwP37u01xvmTlVhJ+ox3bV+trsgjojsldVDuB05JuXLaw==}
+  /@tabler/icons-react@2.37.0(react@18.2.0):
+    resolution: {integrity: sha512-1A2hae3WwF1rOes4J+BpNFCtXs+/syiXxeqadwq61tMGsCsM5TjZTu41RzLRPNP5i82th5JusGcqBrBhgcdvvg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@tabler/icons': 2.35.0
+      '@tabler/icons': 2.37.0
       prop-types: 15.8.1
       react: 18.2.0
     dev: false
 
   /@tabler/icons@2.35.0:
     resolution: {integrity: sha512-qW/itKdmFvfGw6mAQ+cZy+2MYTXb0XdGAVhO3obYLJEfsSPMwQRO0S9ckFk1xMQX/Tj7REC3TEmWUBWNi3/o3g==}
+    dev: false
+
+  /@tabler/icons@2.37.0:
+    resolution: {integrity: sha512-Qo/aRhs2xXcD8IDSuePonR/39GSvQUdwv6RXdbcAhMfpJZP+pHRn2TQFPNGJND9B5uUBez694j4Nx71539XHGA==}
     dev: false
 
   /@tiptap/core@2.1.11(@tiptap/pm@2.0.3):
