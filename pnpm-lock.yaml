@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.8.6
     version: 3.8.6(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
   '@apollo/server':
-    specifier: ^4.9.4
-    version: 4.9.4(graphql@16.8.1)
+    specifier: ^4.9.5
+    version: 4.9.5(graphql@16.8.1)
   '@babel/core':
     specifier: ^7.23.2
     version: 7.23.2
@@ -263,8 +263,8 @@ packages:
       graphql: 16.8.1
     dev: false
 
-  /@apollo/server@4.9.4(graphql@16.8.1):
-    resolution: {integrity: sha512-lopNDM3sZerTcYH/P85QX5HqSNV4HoVbtX3zOrf0ak7eplhPDiGVyF0jQWRbL64znG6KXW+nMuLDTyFTMQnvgA==}
+  /@apollo/server@4.9.5(graphql@16.8.1):
+    resolution: {integrity: sha512-eDBfArYbZaTm1AGa82M1aL7lOscVhnZsH85+OWmHMIR98qntzEjNpWpQPYDTru63Qxs4kHcY29NUx/kMGZfGEA==}
     engines: {node: '>=14.16.0'}
     peerDependencies:
       graphql: ^16.6.0
