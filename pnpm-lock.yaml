@@ -69,8 +69,8 @@ dependencies:
     specifier: 14.0.3
     version: 14.0.3(next@14.0.3)
   '@tabler/icons':
-    specifier: ^2.40.0
-    version: 2.40.0
+    specifier: ^2.44.0
+    version: 2.44.0
   '@tabler/icons-react':
     specifier: ^2.44.0
     version: 2.44.0(react@18.2.0)
@@ -1614,10 +1614,6 @@ packages:
       '@tabler/icons': 2.44.0
       prop-types: 15.8.1
       react: 18.2.0
-    dev: false
-
-  /@tabler/icons@2.40.0:
-    resolution: {integrity: sha512-VqKsBSX159cLFTnCzkCmGhZtSPJHNN0lM2sC4xe0HPOfPUnjiex7rDHDdut4oe4iKRecDDpwXwM9BcU6xCPlCg==}
     dev: false
 
   /@tabler/icons@2.44.0:
