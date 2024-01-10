@@ -64,7 +64,7 @@ dependencies:
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/tiptap':
     specifier: ^6.0.1
-    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.45.0)(@tiptap/extension-link@2.1.13)(@tiptap/react@2.1.13)(react@18.2.0)
+    version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.45.0)(@tiptap/extension-link@2.1.15)(@tiptap/react@2.1.13)(react@18.2.0)
   '@next/font':
     specifier: 14.0.4
     version: 14.0.4(next@14.0.4)
@@ -78,8 +78,8 @@ dependencies:
     specifier: 2.1.13
     version: 2.1.13(@tiptap/pm@2.0.3)
   '@tiptap/extension-link':
-    specifier: 2.1.13
-    version: 2.1.13(@tiptap/core@2.1.13)(@tiptap/pm@2.0.3)
+    specifier: 2.1.15
+    version: 2.1.15(@tiptap/core@2.1.13)(@tiptap/pm@2.0.3)
   '@tiptap/react':
     specifier: 2.1.13
     version: 2.1.13(@tiptap/core@2.1.13)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
@@ -1243,7 +1243,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@mantine/tiptap@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.45.0)(@tiptap/extension-link@2.1.13)(@tiptap/react@2.1.13)(react@18.2.0):
+  /@mantine/tiptap@6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@tabler/icons-react@2.45.0)(@tiptap/extension-link@2.1.15)(@tiptap/react@2.1.13)(react@18.2.0):
     resolution: {integrity: sha512-V2IXjrgJBXu+JSv3mNTDs5yGtSht5/5P9TE+/ItML0DyP6/xWi5tIXLOtAGn7SivFRfUbR6PZJckcJnSUUpEFA==}
     peerDependencies:
       '@mantine/core': 6.0.13
@@ -1257,7 +1257,7 @@ packages:
       '@mantine/hooks': 6.0.13(react@18.2.0)
       '@mantine/utils': 6.0.13(react@18.2.0)
       '@tabler/icons-react': 2.45.0(react@18.2.0)
-      '@tiptap/extension-link': 2.1.13(@tiptap/core@2.1.13)(@tiptap/pm@2.0.3)
+      '@tiptap/extension-link': 2.1.15(@tiptap/core@2.1.13)(@tiptap/pm@2.0.3)
       '@tiptap/react': 2.1.13(@tiptap/core@2.1.13)(@tiptap/pm@2.0.3)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
     dev: false
@@ -1767,8 +1767,8 @@ packages:
       '@tiptap/core': 2.1.13(@tiptap/pm@2.0.3)
     dev: false
 
-  /@tiptap/extension-link@2.1.13(@tiptap/core@2.1.13)(@tiptap/pm@2.0.3):
-    resolution: {integrity: sha512-wuGMf3zRtMHhMrKm9l6Tft5M2N21Z0UP1dZ5t1IlOAvOeYV2QZ5UynwFryxGKLO0NslCBLF/4b/HAdNXbfXWUA==}
+  /@tiptap/extension-link@2.1.15(@tiptap/core@2.1.13)(@tiptap/pm@2.0.3):
+    resolution: {integrity: sha512-mqjZws+8VyOl++pUeB2t4E/sCKhsxutLGVZY7yGRNdl30SfJirTf9hdcJRSpVkmI+9fiQ6Xnx081kCs7oaKZLw==}
     peerDependencies:
       '@tiptap/core': ^2.0.0
       '@tiptap/pm': ^2.0.0
