@@ -39,8 +39,8 @@ dependencies:
     specifier: ^6.0.1
     version: 6.0.13(@mantine/core@6.0.13)(@mantine/hooks@6.0.13)(@mantine/prism@6.0.13)(@tabler/icons-react@2.46.0)(react-dom@18.2.0)(react@18.2.0)
   '@mantine/form':
-    specifier: ^7.5.0
-    version: 7.5.0(react@18.2.0)
+    specifier: ^7.6.2
+    version: 7.6.2(react@18.2.0)
   '@mantine/hooks':
     specifier: ^6.0.1
     version: 6.0.13(react@18.2.0)
@@ -1103,8 +1103,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@mantine/form@7.5.0(react@18.2.0):
-    resolution: {integrity: sha512-Bp2ZYwt+oYXNUm7ySPwst5C9S44YvrdsiFXjUzjX1QaoznAWern1W0dtyF7vJ3KWOoY9+7XXx+Ou4pHTOIq/hQ==}
+  /@mantine/form@7.6.2(react@18.2.0):
+    resolution: {integrity: sha512-a5jHPdU3UXvqeAsAvv+OBrwAy/dxiAxCsMlyRrc9JyKCMLEkQ5cQ6FAiHx5vkGG49hy+VgFWLLt8+kWlgqphsQ==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
