@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.9.10",
-    "@apollo/server": "^4.10.0",
+    "@apollo/server": "^4.10.2",
     "@babel/core": "^7.24.4",
     "@emotion/react": "^11.11.3",
     "@emotion/server": "^11.11.0",
