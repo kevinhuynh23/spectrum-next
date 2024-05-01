@@ -69,8 +69,8 @@ dependencies:
     specifier: 14.1.4
     version: 14.1.4(next@14.1.4)
   '@tabler/icons':
-    specifier: ^2.46.0
-    version: 2.46.0
+    specifier: ^3.3.0
+    version: 3.3.0
   '@tabler/icons-react':
     specifier: ^2.46.0
     version: 2.46.0(react@18.2.0)
@@ -1669,6 +1669,10 @@ packages:
 
   /@tabler/icons@2.46.0:
     resolution: {integrity: sha512-Q5G8Pj5IO+Uhc6pszpu5/hGYY018JwEzzvmuqr+gKJtfIvAHA3umpwUilMRLEy89p+WCP+YsDhicMhfBCCv1qA==}
+    dev: false
+
+  /@tabler/icons@3.3.0:
+    resolution: {integrity: sha512-PLVe9d7b59sKytbx00KgeGhQG3N176Ezv8YMmsnSz4s0ifDzMWlp/h2wEfQZ0ZNe8e377GY2OW6kovUe3Rnd0g==}
     dev: false
 
   /@tiptap/core@2.2.0(@tiptap/pm@2.0.3):
