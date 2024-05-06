@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@apollo/client':
-    specifier: ^3.9.10
-    version: 3.9.10(@types/react@18.2.48)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^3.10.2
+    version: 3.10.2(@types/react@18.2.48)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
   '@apollo/server':
     specifier: ^4.10.0
     version: 4.10.0(graphql@16.8.1)
@@ -196,8 +196,8 @@ packages:
       graphql: 16.8.1
     dev: false
 
-  /@apollo/client@3.9.10(@types/react@18.2.48)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-w8i/Lk1P0vvWZF0Xb00XPonn79/0rgRJ1vopBlVudVuy9QP29/NZXK0rI2xJIN6VrKuEqJZaVGJC+7k23I2sfA==}
+  /@apollo/client@3.10.2(@types/react@18.2.48)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-J4e2RQN4DgMthCqBtBOXOawYTWmdJprAWqv8rdYLmeW4/Pnrlrl4Hvb/zvENlitDAiRUU33Dc/3OJqIMEJAxNw==}
     peerDependencies:
       graphql: ^15.0.0 || ^16.0.0
       graphql-ws: ^5.5.5
@@ -225,7 +225,7 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      rehackt: 0.0.6(@types/react@18.2.48)(react@18.2.0)
+      rehackt: 0.1.0(@types/react@18.2.48)(react@18.2.0)
       response-iterator: 0.2.6
       symbol-observable: 4.0.0
       ts-invariant: 0.10.3
@@ -5073,8 +5073,8 @@ packages:
       set-function-name: 2.0.1
     dev: true
 
-  /rehackt@0.0.6(@types/react@18.2.48)(react@18.2.0):
-    resolution: {integrity: sha512-l3WEzkt4ntlEc/IB3/mF6SRgNHA6zfQR7BlGOgBTOmx7IJJXojDASav+NsgXHFjHn+6RmwqsGPFgZpabWpeOdw==}
+  /rehackt@0.1.0(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-7kRDOuLHB87D/JESKxQoRwv4DzbIdwkAGQ7p6QKGdVlY1IZheUnVhlk/4UZlNUVxdAXpyxikE3URsG067ybVzw==}
     peerDependencies:
       '@types/react': '*'
       react: '*'
