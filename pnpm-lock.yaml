@@ -72,8 +72,8 @@ importers:
         specifier: 14.2.4
         version: 14.2.4(next@14.2.5(@babel/core@7.24.8)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))
       '@tabler/icons':
-        specifier: ^3.6.0
-        version: 3.6.0
+        specifier: ^3.10.0
+        version: 3.10.0
       '@tabler/icons-react':
         specifier: ^2.46.0
         version: 2.46.0(react@18.3.1)
@@ -939,8 +939,8 @@ packages:
   '@tabler/icons@2.46.0':
     resolution: {integrity: sha512-Q5G8Pj5IO+Uhc6pszpu5/hGYY018JwEzzvmuqr+gKJtfIvAHA3umpwUilMRLEy89p+WCP+YsDhicMhfBCCv1qA==}
 
-  '@tabler/icons@3.6.0':
-    resolution: {integrity: sha512-Zv0Ofc64RCMpZ2F8CvsWAphrSjerx5hEErt/RMmE+W8r4E5l5Lizi+My9KbbZQ4NyAtrtrOX80OY1oROZrRzEA==}
+  '@tabler/icons@3.10.0':
+    resolution: {integrity: sha512-jCMO+hDTw8Gn1CNb15zIENLQ9b0UplGXtjMnEUhDoKH+Q4fta8tBLUxZpPpFtpV+q+gzGqfM76xNAoD1GBpmnA==}
 
   '@tiptap/core@2.2.0':
     resolution: {integrity: sha512-ped7XlQ9k5VyE2xUwyRegn1yVF/CAsaF+riBUBJ9+71/gSo2mCZ+6gQvee+LVN1+rD1qN/vWgKhKNDVaU+VaFg==}
@@ -4186,7 +4186,7 @@ snapshots:
 
   '@tabler/icons@2.46.0': {}
 
-  '@tabler/icons@3.6.0': {}
+  '@tabler/icons@3.10.0': {}
 
   '@tiptap/core@2.2.0(@tiptap/pm@2.0.3)':
     dependencies:
