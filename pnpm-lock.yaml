@@ -12,8 +12,8 @@ importers:
         specifier: ^3.10.8
         version: 3.10.8(@types/react@18.3.3)(graphql@16.8.1)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       '@apollo/server':
-        specifier: ^4.10.0
-        version: 4.10.0(graphql@16.8.1)
+        specifier: ^4.10.5
+        version: 4.10.5(graphql@16.8.1)
       '@babel/core':
         specifier: ^7.24.8
         version: 7.24.8
@@ -217,8 +217,8 @@ packages:
     peerDependencies:
       graphql: 14.x || 15.x || 16.x
 
-  '@apollo/server@4.10.0':
-    resolution: {integrity: sha512-pLx//lZ/pvUfWL9G8Np8+y3ujc0pYc8U7dwD6ztt9FAw8NmCPzPaDzlXLBAjGU6WnkqVBOnz8b3dOwRNjLYSUA==}
+  '@apollo/server@4.10.5':
+    resolution: {integrity: sha512-I+Oi1CnphXExSAAsZbclgRDN4k4CEMxyKRzYg3bir5N8OmydEhzXDlIGAOETP/TKblxR7HPXGvwn2cJKzbl46w==}
     engines: {node: '>=14.16.0'}
     peerDependencies:
       graphql: ^16.6.0
@@ -564,9 +564,6 @@ packages:
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
-
-  '@josephg/resolvable@1.0.1':
-    resolution: {integrity: sha512-CtzORUwWTTOTqfVtHaKRJ0I1kNQd1bpn3sUh8I3nJDVY+5/M/Oe1DnEWzPQvqq/xPIIkzzzIP7mfCoAjFRvDhg==}
 
   '@jridgewell/gen-mapping@0.1.1':
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
@@ -1416,10 +1413,6 @@ packages:
 
   content-disposition@0.5.4:
     resolution: {integrity: sha512-FveZTNuGw04cxlAiWbzi6zTAL/lhehaWbTtgluJh4/E95DqMwTmha3KZN1aAWA8cFIhHzMZUvLevkw5Rqk+tSQ==}
-    engines: {node: '>= 0.6'}
-
-  content-type@1.0.4:
-    resolution: {integrity: sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==}
     engines: {node: '>= 0.6'}
 
   content-type@1.0.5:
@@ -3331,7 +3324,7 @@ snapshots:
       '@apollo/utils.logger': 2.0.0
       graphql: 16.8.1
 
-  '@apollo/server@4.10.0(graphql@16.8.1)':
+  '@apollo/server@4.10.5(graphql@16.8.1)':
     dependencies:
       '@apollo/cache-control-types': 1.0.3(graphql@16.8.1)
       '@apollo/server-gateway-interface': 1.1.1(graphql@16.8.1)
@@ -3344,7 +3337,6 @@ snapshots:
       '@apollo/utils.usagereporting': 2.1.0(graphql@16.8.1)
       '@apollo/utils.withrequired': 2.0.0
       '@graphql-tools/schema': 9.0.13(graphql@16.8.1)
-      '@josephg/resolvable': 1.0.1
       '@types/express': 4.17.15
       '@types/express-serve-static-core': 4.17.32
       '@types/node-fetch': 2.6.2
@@ -3778,8 +3770,6 @@ snapshots:
       strip-ansi-cjs: strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
-
-  '@josephg/resolvable@1.0.1': {}
 
   '@jridgewell/gen-mapping@0.1.1':
     dependencies:
@@ -4725,8 +4715,6 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  content-type@1.0.4: {}
-
   content-type@1.0.5: {}
 
   convert-source-map@1.9.0: {}
@@ -5213,7 +5201,7 @@ snapshots:
       array-flatten: 1.1.1
       body-parser: 1.20.2
       content-disposition: 0.5.4
-      content-type: 1.0.4
+      content-type: 1.0.5
       cookie: 0.6.0
       cookie-signature: 1.0.6
       debug: 2.6.9
