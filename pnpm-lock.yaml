@@ -40,7 +40,7 @@ importers:
         version: 6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       '@mantine/ds':
         specifier: ^6.0.1
-        version: 6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@mantine/prism@6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@tabler/icons-react@2.46.0(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
+        version: 6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@mantine/prism@6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@tabler/icons-react@3.11.0(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       '@mantine/form':
         specifier: ^7.11.2
         version: 7.11.2(react@18.3.1)
@@ -67,7 +67,7 @@ importers:
         version: 6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       '@mantine/tiptap':
         specifier: ^6.0.1
-        version: 6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@tabler/icons-react@2.46.0(react@18.3.1))(@tiptap/extension-link@2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6)))(@tiptap/react@2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6))(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@tabler/icons-react@3.11.0(react@18.3.1))(@tiptap/extension-link@2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6)))(@tiptap/react@2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6))(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@next/font':
         specifier: 14.2.5
         version: 14.2.5(next@14.2.5(@babel/core@7.24.8)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))
@@ -75,8 +75,8 @@ importers:
         specifier: ^3.11.0
         version: 3.11.0
       '@tabler/icons-react':
-        specifier: ^2.46.0
-        version: 2.46.0(react@18.3.1)
+        specifier: ^3.11.0
+        version: 3.11.0(react@18.3.1)
       '@tiptap/core':
         specifier: 2.5.6
         version: 2.5.6(@tiptap/pm@2.0.3)
@@ -928,13 +928,10 @@ packages:
   '@swc/helpers@0.5.5':
     resolution: {integrity: sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==}
 
-  '@tabler/icons-react@2.46.0':
-    resolution: {integrity: sha512-X8MRxuslIOFqMjAo+GvUZDpjlOwNYNJTuOsHXf/NBvVI6ygqUf0FUNsDLLA5fQ6k6KtRwxMlgGB+eR8ZG1UP0g==}
+  '@tabler/icons-react@3.11.0':
+    resolution: {integrity: sha512-xHNBi9mns1slvqos+7LkP3ube4CjWrANMbxMaorzwzO9J/+y1sAEG/sN8CV8FmtpYW/9/gDR+OWCjjLLg0RmAw==}
     peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0
-
-  '@tabler/icons@2.46.0':
-    resolution: {integrity: sha512-Q5G8Pj5IO+Uhc6pszpu5/hGYY018JwEzzvmuqr+gKJtfIvAHA3umpwUilMRLEy89p+WCP+YsDhicMhfBCCv1qA==}
+      react: '>= 16'
 
   '@tabler/icons@3.11.0':
     resolution: {integrity: sha512-/vZinJNvCYhdAB+RUsyCpanSPuOEKHHIZi4Uu0Bw7ilewHnQhCWUPrT704uHCRli2ROl7spADPmWzAqOganA5A==}
@@ -2646,9 +2643,6 @@ packages:
   prosemirror-transform@1.9.0:
     resolution: {integrity: sha512-5UXkr1LIRx3jmpXXNKDhv8OyAOeLTGuXNwdVfg8x27uASna/wQkr9p6fD3eupGOi4PLJfbezxTyi/7fSJypXHg==}
 
-  prosemirror-view@1.33.8:
-    resolution: {integrity: sha512-4PhMr/ufz2cdvFgpUAnZfs+0xij3RsFysreeG9V/utpwX7AJtYCDVyuRxzWoMJIEf4C7wVihuBNMPpFLPCiLQw==}
-
   prosemirror-view@1.33.9:
     resolution: {integrity: sha512-xV1A0Vz9cIcEnwmMhKKFAOkfIp8XmJRnaZoPqNXrPS7EK5n11Ov8V76KhR0RsfQd/SIzmWY+bg+M44A2Lx/Nnw==}
 
@@ -3870,13 +3864,13 @@ snapshots:
       react-dom: 18.2.0(react@18.3.1)
       react-dropzone: 14.2.3(react@18.3.1)
 
-  '@mantine/ds@6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@mantine/prism@6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@tabler/icons-react@2.46.0(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)':
+  '@mantine/ds@6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@mantine/prism@6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@tabler/icons-react@3.11.0(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@mantine/core': 6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       '@mantine/hooks': 6.0.13(react@18.3.1)
       '@mantine/prism': 6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       '@mantine/utils': 6.0.13(react@18.3.1)
-      '@tabler/icons-react': 2.46.0(react@18.3.1)
+      '@tabler/icons-react': 3.11.0(react@18.3.1)
       react: 18.3.1
       react-dom: 18.2.0(react@18.3.1)
 
@@ -3968,12 +3962,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.2.0(react@18.3.1)
 
-  '@mantine/tiptap@6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@tabler/icons-react@2.46.0(react@18.3.1))(@tiptap/extension-link@2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6)))(@tiptap/react@2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6))(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+  '@mantine/tiptap@6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@tabler/icons-react@3.11.0(react@18.3.1))(@tiptap/extension-link@2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6)))(@tiptap/react@2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6))(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@mantine/core': 6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       '@mantine/hooks': 6.0.13(react@18.3.1)
       '@mantine/utils': 6.0.13(react@18.3.1)
-      '@tabler/icons-react': 2.46.0(react@18.3.1)
+      '@tabler/icons-react': 3.11.0(react@18.3.1)
       '@tiptap/extension-link': 2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6))
       '@tiptap/react': 2.2.0(@tiptap/core@2.5.6(@tiptap/pm@2.0.3))(@tiptap/pm@2.0.3(@tiptap/core@2.5.6))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       react: 18.3.1
@@ -4174,13 +4168,10 @@ snapshots:
       '@swc/counter': 0.1.3
       tslib: 2.4.1
 
-  '@tabler/icons-react@2.46.0(react@18.3.1)':
+  '@tabler/icons-react@3.11.0(react@18.3.1)':
     dependencies:
-      '@tabler/icons': 2.46.0
-      prop-types: 15.8.1
+      '@tabler/icons': 3.11.0
       react: 18.3.1
-
-  '@tabler/icons@2.46.0': {}
 
   '@tabler/icons@3.11.0': {}
 
@@ -4301,9 +4292,9 @@ snapshots:
       prosemirror-schema-list: 1.3.0
       prosemirror-state: 1.4.3
       prosemirror-tables: 1.3.2
-      prosemirror-trailing-node: 2.0.4(prosemirror-model@1.22.2)(prosemirror-state@1.4.3)(prosemirror-view@1.33.8)
+      prosemirror-trailing-node: 2.0.4(prosemirror-model@1.22.2)(prosemirror-state@1.4.3)(prosemirror-view@1.33.9)
       prosemirror-transform: 1.9.0
-      prosemirror-view: 1.33.8
+      prosemirror-view: 1.33.9
     transitivePeerDependencies:
       - supports-color
 
@@ -6125,9 +6116,9 @@ snapshots:
       prosemirror-model: 1.22.2
       prosemirror-state: 1.4.3
       prosemirror-transform: 1.9.0
-      prosemirror-view: 1.33.8
+      prosemirror-view: 1.33.9
 
-  prosemirror-trailing-node@2.0.4(prosemirror-model@1.22.2)(prosemirror-state@1.4.3)(prosemirror-view@1.33.8):
+  prosemirror-trailing-node@2.0.4(prosemirror-model@1.22.2)(prosemirror-state@1.4.3)(prosemirror-view@1.33.9):
     dependencies:
       '@babel/runtime': 7.22.5
       '@remirror/core-constants': 2.0.1
@@ -6135,7 +6126,7 @@ snapshots:
       escape-string-regexp: 4.0.0
       prosemirror-model: 1.22.2
       prosemirror-state: 1.4.3
-      prosemirror-view: 1.33.8
+      prosemirror-view: 1.33.9
     transitivePeerDependencies:
       - supports-color
 
@@ -6146,12 +6137,6 @@ snapshots:
   prosemirror-transform@1.9.0:
     dependencies:
       prosemirror-model: 1.22.2
-
-  prosemirror-view@1.33.8:
-    dependencies:
-      prosemirror-model: 1.22.2
-      prosemirror-state: 1.4.3
-      prosemirror-transform: 1.9.0
 
   prosemirror-view@1.33.9:
     dependencies:
