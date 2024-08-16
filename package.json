@@ -36,7 +36,7 @@
     "@tiptap/core": "2.5.8",
     "@tiptap/extension-link": "2.2.0",
     "@tiptap/react": "2.4.0",
-    "@tiptap/starter-kit": "2.5.8",
+    "@tiptap/starter-kit": "2.6.4",
     "@types/node": "22.0.2",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.2.18",
