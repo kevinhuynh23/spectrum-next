@@ -72,8 +72,8 @@ importers:
         specifier: 14.2.5
         version: 14.2.5(next@14.2.5(@babel/core@7.25.2)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))
       '@tabler/icons':
-        specifier: ^3.11.0
-        version: 3.11.0
+        specifier: ^3.12.0
+        version: 3.12.0
       '@tabler/icons-react':
         specifier: ^3.11.0
         version: 3.11.0(react@18.3.1)
@@ -903,6 +903,9 @@ packages:
 
   '@tabler/icons@3.11.0':
     resolution: {integrity: sha512-/vZinJNvCYhdAB+RUsyCpanSPuOEKHHIZi4Uu0Bw7ilewHnQhCWUPrT704uHCRli2ROl7spADPmWzAqOganA5A==}
+
+  '@tabler/icons@3.12.0':
+    resolution: {integrity: sha512-Im37ar/mQkqLb6XUXsU7nOc4/66VB9/3KLuZ+6tUsJKHHNLaDUkYfCTNG3pnGDI03laByxVf5+umSNK2yPTx8A==}
 
   '@tiptap/core@2.6.5':
     resolution: {integrity: sha512-1q5gn4YB0Qm3xFxdQq40FMwjL0gj4flP3UeXHlHXHYvJtMK9ZckRJReYtTEGjRp99BJWivU0YehGdC/96f47GA==}
@@ -3728,7 +3731,7 @@ snapshots:
 
   '@linaria/logger@4.0.0':
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.6
       picocolors: 1.0.1
     transitivePeerDependencies:
       - supports-color
@@ -4104,6 +4107,8 @@ snapshots:
       react: 18.3.1
 
   '@tabler/icons@3.11.0': {}
+
+  '@tabler/icons@3.12.0': {}
 
   '@tiptap/core@2.6.5(@tiptap/pm@2.0.3)':
     dependencies:
