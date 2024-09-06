@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.11.4",
+    "@apollo/client": "^3.11.8",
     "@apollo/server": "^4.11.0",
     "@babel/core": "^7.25.2",
     "@emotion/react": "^11.11.3",
