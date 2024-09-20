@@ -69,8 +69,8 @@ importers:
         specifier: ^6.0.1
         version: 6.0.13(@mantine/core@6.0.13(@emotion/react@11.11.3(@types/react@18.3.3)(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@types/react@18.3.3)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(@mantine/hooks@6.0.13(react@18.3.1))(@tabler/icons-react@3.14.0(react@18.3.1))(@tiptap/extension-link@2.2.0(@tiptap/core@2.6.6(@tiptap/pm@2.6.6))(@tiptap/pm@2.6.6))(@tiptap/react@2.4.0(@tiptap/core@2.6.6(@tiptap/pm@2.6.6))(@tiptap/pm@2.6.6)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@next/font':
-        specifier: 14.2.5
-        version: 14.2.5(next@14.2.5(@babel/core@7.25.2)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))
+        specifier: 14.2.13
+        version: 14.2.13(next@14.2.5(@babel/core@7.25.2)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))
       '@tabler/icons':
         specifier: ^3.14.0
         version: 3.14.0
@@ -669,8 +669,8 @@ packages:
   '@next/eslint-plugin-next@14.2.7':
     resolution: {integrity: sha512-+7xh142AdhZGjY9/L0iFo7mqRBMJHe+q+uOL+hto1Lfo9DeWCGcR6no4StlFbVSVcA6fQLKEX6y6qhMsSKbgNQ==}
 
-  '@next/font@14.2.5':
-    resolution: {integrity: sha512-e2f3M+tAuJPUyXwWtEPKlPfpPEKODiQvPjdxOWBZC+zgdGv18KfjTkEmopfkfpZ016yCvw5BmMPeuEU/uiDf9g==}
+  '@next/font@14.2.13':
+    resolution: {integrity: sha512-xtleJ172yNVSVoQoMIwPHnM9zSPOzNB964mZMOFmRaLWgWMgmlhCVI42dlDSGc6d9nQ/WHCmCZaJMloS1HHGXg==}
     peerDependencies:
       next: '*'
 
@@ -3745,7 +3745,7 @@ snapshots:
     dependencies:
       glob: 10.3.10
 
-  '@next/font@14.2.5(next@14.2.5(@babel/core@7.25.2)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))':
+  '@next/font@14.2.13(next@14.2.5(@babel/core@7.25.2)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))':
     dependencies:
       next: 14.2.5(@babel/core@7.25.2)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
 
