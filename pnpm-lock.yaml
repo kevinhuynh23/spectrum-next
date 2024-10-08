@@ -90,8 +90,8 @@ importers:
         specifier: 2.6.6
         version: 2.6.6
       '@types/node':
-        specifier: 22.5.0
-        version: 22.5.0
+        specifier: 22.7.5
+        version: 22.7.5
       '@types/react':
         specifier: 18.3.3
         version: 18.3.3
@@ -1011,8 +1011,8 @@ packages:
   '@types/node-fetch@2.6.2':
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
 
-  '@types/node@22.5.0':
-    resolution: {integrity: sha512-DkFrJOe+rfdHTqqMg0bSNlGlQ85hSoh2TPzZyhHsXnMtligRWpxUySiyw8FY14ITt24HVCiQPWxS3KO/QlGmWg==}
+  '@types/node@22.7.5':
+    resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
 
   '@types/parse-json@4.0.0':
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -1623,6 +1623,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -4067,15 +4068,15 @@ snapshots:
   '@types/body-parser@1.19.2':
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 22.5.0
+      '@types/node': 22.7.5
 
   '@types/connect@3.4.35':
     dependencies:
-      '@types/node': 22.5.0
+      '@types/node': 22.7.5
 
   '@types/express-serve-static-core@4.17.32':
     dependencies:
-      '@types/node': 22.5.0
+      '@types/node': 22.7.5
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
 
@@ -4094,10 +4095,10 @@ snapshots:
 
   '@types/node-fetch@2.6.2':
     dependencies:
-      '@types/node': 22.5.0
+      '@types/node': 22.7.5
       form-data: 3.0.1
 
-  '@types/node@22.5.0':
+  '@types/node@22.7.5':
     dependencies:
       undici-types: 6.19.8
 
@@ -4121,7 +4122,7 @@ snapshots:
   '@types/serve-static@1.15.0':
     dependencies:
       '@types/mime': 3.0.1
-      '@types/node': 22.5.0
+      '@types/node': 22.7.5
 
   '@typescript-eslint/parser@5.48.1(eslint@8.57.0)(typescript@5.5.4)':
     dependencies:
