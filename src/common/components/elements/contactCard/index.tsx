@@ -10,10 +10,16 @@ const useStyles = createStyles((theme) => ({
       theme.colors[theme.primaryColor][7]
     } 100%)`,
     borderRadius: theme.radius.md,
-    padding: theme.spacing.xl * 2.5,
+    padding:
+      typeof theme.spacing.xl === 'number'
+        ? theme.spacing.xl * 2.5
+        : parseFloat(String(theme.spacing.xl)) * 2.5,
 
     [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      padding: theme.spacing.xl * 1.5,
+      padding:
+        typeof theme.spacing.xl === 'number'
+          ? theme.spacing.xl * 1.5
+          : parseFloat(String(theme.spacing.xl)) * 1.5,
     },
   },
 

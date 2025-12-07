@@ -49,7 +49,7 @@ interface NavbarLinkProps {
 const NavbarLink = ({ icon: TablerIcon, label, active, onClick }: NavbarLinkProps) => {
   const { classes, cx } = useStyles();
   return (
-    <Tooltip label={label} position="right" transitionDuration={0}>
+    <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
       <UnstyledButton onClick={onClick} className={cx(classes.link, { [classes.active]: active })}>
         <TablerIcon stroke={DEFAULT_STROKE_SIZE} />
       </UnstyledButton>

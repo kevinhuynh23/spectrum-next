@@ -1,6 +1,6 @@
 import { createStyles, Menu, Center, Header, Container, Group, Button, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconChevronDown } from '@tabler/icons';
+import { IconChevronDown } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 
 const HEADER_HEIGHT = 60;
@@ -70,7 +70,7 @@ const HeaderAction = ({ links }: HeaderActionProps) => {
 
     if (menuItems) {
       return (
-        <Menu key={link.label} trigger="hover" exitTransitionDuration={0}>
+        <Menu key={link.label} trigger="hover">
           <Menu.Target>
             <a className={classes.link} onClick={(event) => handleRoute(event, link.link)}>
               <Center>
