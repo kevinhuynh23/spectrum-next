@@ -63,6 +63,7 @@
     "eslint": "9.39.2",
     "eslint-config-next": "14.2.7",
     "eslint-config-prettier": "^9.1.2",
+    "glob": "10.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
     "only-allow": "^1.2.2",
