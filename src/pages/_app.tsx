@@ -7,11 +7,7 @@ import { NavbarMinimal } from '../common/components/elements/navbar';
 
 const App = (props: AppProps) => {
   const { Component, pageProps } = props;
-  const [links, setLinks] = useState<HeaderLink[]>([]);
-
-  useEffect(() => {
-    setLinks(routes);
-  }, []);
+  const [links] = useState<HeaderLink[]>(routes);
 
   return (
     <MantineProvider

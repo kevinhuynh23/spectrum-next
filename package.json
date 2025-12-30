@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "@apollo/client": "^3.14.0",
@@ -33,17 +33,17 @@
     "@next/font": "14.2.5",
     "@tabler/icons": "^3.35.0",
     "@tabler/icons-react": "^3.35.0",
-    "@tiptap/core": "2.6.6",
-    "@tiptap/extension-link": "2.2.0",
-    "@tiptap/react": "2.4.0",
-    "@tiptap/starter-kit": "2.6.6",
+    "@tiptap/core": "2.27.1",
+    "@tiptap/extension-link": "2.10.4",
+    "@tiptap/react": "3.14.0",
+    "@tiptap/starter-kit": "3.14.0",
     "@types/node": "22.5.0",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.2.18",
     "dayjs": "^1.11.19",
     "embla-carousel-react": "^7.1.0",
     "graphql": "^16.12.0",
-    "next": "14.2.5",
+    "next": "14.2.35",
     "prop-types": "^15.8.1",
     "prosemirror-commands": "^1.7.1",
     "prosemirror-dropcursor": "^1.8.2",
@@ -60,13 +60,17 @@
     "typescript": "5.5.4"
   },
   "devDependencies": {
-    "eslint": "8.57.0",
-    "eslint-config-next": "14.2.7",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.1.1",
     "eslint-config-prettier": "^9.1.2",
+    "glob": "10.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
     "only-allow": "^1.2.2",
     "prettier": "3.3.3"
+  },
+  "overrides": {
+    "glob": "10.5.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
