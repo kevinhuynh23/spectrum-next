@@ -1,0 +1,38 @@
+name: nightly: detect PRs completed elsewhere
+
+on:
+  schedule:
+    # runs nightly at 03:00 UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  detect-completed-prs:
+    name: Detect PRs already included in main
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Ensure script is executable
+        run: chmod +x ./scripts/close-completed-prs.sh
+
+      - name: Run detection (dry-run) and write JSON results
+        id: run_check
+        run: |
+          set -euo pipefail
+          ./scripts/close-completed-prs.sh --json-out results.json --report-issue --issue-title "Automated: PRs included in main (nightly)"
+          cat results.json || true
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-detection-results
+          path: results.json
