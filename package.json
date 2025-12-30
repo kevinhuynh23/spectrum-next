@@ -68,6 +68,9 @@
     "only-allow": "^1.2.2",
     "prettier": "3.3.3"
   },
+  "overrides": {
+    "glob": "10.5.0"
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   }
