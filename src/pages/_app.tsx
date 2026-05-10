@@ -1,27 +1,27 @@
-import { AppProps } from 'next/app';
-import { AppShell, MantineProvider, Navbar } from '@mantine/core';
-import HeaderAction, { HeaderLink } from '../common/components/elements/header';
-import { useState, useEffect } from 'react';
-import { routes } from '../common/types/routes';
-import { NavbarMinimal } from '../common/components/elements/navbar';
+import type { AppProps } from 'next/app'
+import { SessionProvider } from 'next-auth/react'
+import { ApolloProvider } from '@apollo/client'
+import { MantineProvider } from '@mantine/core'
+import { NotificationsProvider } from '@mantine/notifications'
+import { apolloClient } from '@/common/apollo-client'
+import HeaderAction, { HeaderLink } from '../common/components/elements/header'
+import { useState } from 'react'
+import { routes } from '../common/types/routes'
+import '../styles/globals.css'
 
-const App = (props: AppProps) => {
-  const { Component, pageProps } = props;
-  const [links] = useState<HeaderLink[]>(routes);
+export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+  const [links] = useState<HeaderLink[]>(routes)
 
   return (
-    <MantineProvider
-      withGlobalStyles
-      withNormalizeCSS
-      theme={{
-        colorScheme: 'dark',
-      }}
-    >
-      <AppShell padding="md" header={<HeaderAction links={links} />} navbar={<NavbarMinimal />}>
-        <Component {...pageProps} />
-      </AppShell>
-    </MantineProvider>
-  );
-};
-
-export default App;
+    <SessionProvider session={session}>
+      <ApolloProvider client={apolloClient}>
+        <MantineProvider withGlobalStyles withNormalizeCSS theme={{ colorScheme: 'dark' }}>
+          <NotificationsProvider>
+            <HeaderAction links={links} />
+            <Component {...pageProps} />
+          </NotificationsProvider>
+        </MantineProvider>
+      </ApolloProvider>
+    </SessionProvider>
+  )
+}
