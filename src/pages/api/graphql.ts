@@ -24,4 +24,4 @@ export default async function graphqlHandler(req: NextApiRequest, res: NextApiRe
   return handler(req, res)
 }
 
-export const config = { api: { bodyParser: false } }
+export const config = { api: { bodyParser: { sizeLimit: '1mb' } } }
