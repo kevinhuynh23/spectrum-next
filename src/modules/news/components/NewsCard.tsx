@@ -1,6 +1,7 @@
 import { Card, Text, Badge, Group, Anchor, Stack } from '@mantine/core'
 import Link from 'next/link'
 import type { NewsArticle } from '@/lib/newsapi'
+import { BiasIndicator } from './BiasIndicator'
 
 interface Props {
   article: NewsArticle & { sourceBias?: string | null; framingAnalysis?: string | null }
@@ -26,6 +27,7 @@ export function NewsCard({ article, category, showSource = false, onRead }: Prop
             {article.title}
           </Anchor>
           {showSource && <Badge size="xs">{article.source.name}</Badge>}
+          <BiasIndicator lean={article.sourceBias} />
           {article.description && (
             <Text size="sm" color="dimmed" lineClamp={2}>
               {article.description}
