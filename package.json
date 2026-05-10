@@ -24,7 +24,7 @@
     "@mantine/dates": "^6.0.22",
     "@mantine/dropzone": "^6.0.22",
     "@mantine/ds": "^6.0.22",
-    "@mantine/form": "^7.17.8",
+    "@mantine/form": "^6.0.22",
     "@mantine/hooks": "^6.0.22",
     "@mantine/modals": "^6.0.22",
     "@mantine/next": "^6.0.22",
@@ -63,7 +63,7 @@
     "prosemirror-transform": "^1.10.5",
     "prosemirror-view": "^1.41.4",
     "react": "18.3.1",
-    "react-dom": "18.2.0",
+    "react-dom": "18.3.1",
     "recharts": "^3.8.1",
     "typescript": "5.5.4"
   },
@@ -92,6 +92,11 @@
     "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["better-sqlite3", "esbuild", "sharp", "unrs-resolver"]
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
