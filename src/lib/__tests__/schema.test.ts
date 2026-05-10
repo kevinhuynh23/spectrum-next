@@ -2,6 +2,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import Database from 'better-sqlite3'
 import { drizzle } from 'drizzle-orm/better-sqlite3'
 import { users, readingMetrics } from '../schema'
+import * as schema from '../schema'
 import { eq } from 'drizzle-orm'
 
 describe('Database schema', () => {
@@ -10,7 +11,7 @@ describe('Database schema', () => {
 
   beforeAll(() => {
     sqlite = new Database(':memory:')
-    db = drizzle(sqlite)
+    db = drizzle(sqlite, { schema })
     sqlite.exec(`
       CREATE TABLE users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,

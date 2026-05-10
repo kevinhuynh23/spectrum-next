@@ -30,3 +30,5 @@ export const biasCache = sqliteTable('bias_cache', {
 export type User = typeof users.$inferSelect
 export type NewUser = typeof users.$inferInsert
 export type ReadingMetric = typeof readingMetrics.$inferSelect
+export type BiasCache = typeof biasCache.$inferSelect
+export type NewBiasCache = typeof biasCache.$inferInsert

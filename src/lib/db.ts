@@ -7,7 +7,10 @@ const DB_PATH = process.env.DATABASE_URL ?? path.join(process.cwd(), 'spectrum.d
 
 const sqlite = new Database(DB_PATH)
 
-sqlite.exec(`
+sqlite.pragma('foreign_keys = ON')
+
+try {
+  sqlite.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     email TEXT NOT NULL UNIQUE,
@@ -32,5 +35,8 @@ sqlite.exec(`
     analyzed_at TEXT DEFAULT CURRENT_TIMESTAMP
   );
 `)
+} catch (err) {
+  throw new Error(`Failed to initialize database schema: ${(err as Error).message}`)
+}
 
 export const db = drizzle(sqlite, { schema })
