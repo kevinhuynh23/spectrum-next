@@ -1,9 +1,6 @@
 import NextAuth from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
-import bcrypt from 'bcryptjs'
-import { eq } from 'drizzle-orm'
-import { db } from '@/lib/db'
-import { users } from '@/lib/schema'
+import { authorizeUser } from '@/lib/auth-utils'
 
 export default NextAuth({
   pages: { signIn: '/login' },
@@ -11,15 +8,15 @@ export default NextAuth({
   callbacks: {
     jwt({ token, user }) {
       if (user) {
-        token.id = (user as any).id
-        token.username = (user as any).username
+        token.id = user.id
+        token.username = user.username
       }
       return token
     },
     session({ session, token }) {
       if (session.user) {
-        (session.user as any).id = token.id
-        ;(session.user as any).username = token.username
+        session.user.id = token.id
+        session.user.username = token.username
       }
       return session
     },
@@ -33,13 +30,7 @@ export default NextAuth({
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) return null
-        const [user] = db.select().from(users)
-          .where(eq(users.email, credentials.email as string))
-          .all()
-        if (!user) return null
-        const valid = await bcrypt.compare(credentials.password as string, user.passwordHash)
-        if (!valid) return null
-        return { id: String(user.id), email: user.email, username: user.username, name: user.username }
+        return authorizeUser(credentials.email as string, credentials.password as string)
       },
     }),
   ],
