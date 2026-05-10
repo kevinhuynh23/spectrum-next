@@ -24,7 +24,7 @@ export const authResolvers = {
     ) {
       if (password !== passwordConf) throw new Error('Passwords do not match')
       const existing = db.select().from(users).where(eq(users.email, email)).all()
-      if (existing.length > 0) throw new Error('Email already in use')
+      if (existing.length > 0) throw new Error('Registration failed. Please try again.')
       const passwordHash = await bcrypt.hash(password, 10)
       const result = db.insert(users).values({ email, passwordHash, username, firstName, lastName }).run()
       const [newUser] = db.select().from(users).where(eq(users.id, Number(result.lastInsertRowid as number | bigint))).all()

@@ -19,6 +19,10 @@ export interface NewsArticle {
   source: { id: string | null; name: string }
 }
 
+if (!process.env.NEWSAPI_KEY && typeof window === 'undefined') {
+  throw new Error('Missing required env var: NEWSAPI_KEY')
+}
+
 const BASE = 'https://newsapi.org/v2'
 
 async function newsApiFetch(path: string): Promise<NewsArticle[]> {

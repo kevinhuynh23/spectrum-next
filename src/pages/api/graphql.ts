@@ -6,6 +6,10 @@ import { typeDefs } from '@/graphql/typedefs'
 import { resolvers } from '@/graphql/resolvers'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
+if (!process.env.NEXTAUTH_SECRET) {
+  throw new Error('Missing required env var: NEXTAUTH_SECRET')
+}
+
 const schema = makeExecutableSchema({ typeDefs, resolvers })
 const server = new ApolloServer({ schema })
 
