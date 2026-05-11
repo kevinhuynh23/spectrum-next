@@ -1,7 +1,7 @@
 'use client'
 
 import { useParams } from 'next/navigation'
-import { Spinner, Divider } from '@heroui/react'
+import { Spinner } from '@heroui/react'
 import { NewsCard } from '@/components/news/NewsCard'
 import { BiasChip } from '@/components/news/BiasChip'
 import { trpc } from '@/trpc/client'
@@ -22,7 +22,7 @@ export default function FullSpectrumPage() {
     <div>
       <h1 className="text-2xl font-bold mb-1">Full Spectrum Coverage</h1>
       <p className="text-default-500 mb-4">&ldquo;{title}&rdquo;</p>
-      <Divider className="mb-4" />
+      <hr className="mb-4 border-default-200" />
 
       <div className="flex flex-wrap gap-2 items-center mb-4">
         {LEANS.map(lean => <BiasChip key={lean} lean={lean} />)}

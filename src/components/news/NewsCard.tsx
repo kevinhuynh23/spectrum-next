@@ -1,4 +1,5 @@
-import { Card, CardBody, Link } from '@heroui/react'
+'use client'
+
 import NextLink from 'next/link'
 import { BiasChip } from './BiasChip'
 import type { NewsArticle } from '@/lib/newsapi'
@@ -12,16 +13,17 @@ interface Props {
 
 export function NewsCard({ article, category, showSource = false, onRead }: Props) {
   return (
-    <Card className="mb-3" shadow="sm">
-      <CardBody>
-        <Link
+    <div className="mb-3 border border-default-200 rounded-lg shadow-sm bg-background">
+      <div className="p-4">
+        <a
           href={article.url}
-          isExternal
-          className="font-semibold text-foreground mb-1 block leading-snug"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-foreground mb-1 block leading-snug hover:underline"
           onClick={() => onRead?.(category, article.source.name)}
         >
           {article.title}
-        </Link>
+        </a>
         {showSource && (
           <p className="text-xs text-default-500 mb-1">{article.source.name}</p>
         )}
@@ -42,8 +44,8 @@ export function NewsCard({ article, category, showSource = false, onRead }: Prop
             </NextLink>
           )}
         </div>
-      </CardBody>
-    </Card>
+      </div>
+    </div>
   )
 }
 

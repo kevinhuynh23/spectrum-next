@@ -1,25 +1,20 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-import { Button } from '@heroui/react'
-import { useEffect, useState } from 'react'
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null
+  const { theme, setTheme, resolvedTheme } = useTheme()
+  const current = theme ?? resolvedTheme
 
   return (
-    <Button
-      isIconOnly
-      variant="light"
+    <button
+      type="button"
       aria-label="Toggle theme"
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={() => setTheme(current === 'dark' ? 'light' : 'dark')}
+      className="p-2 rounded-md hover:bg-default-100"
+      suppressHydrationWarning
     >
-      {theme === 'dark' ? '☀️' : '🌙'}
-    </Button>
+      <span suppressHydrationWarning>{current === 'dark' ? '☀️' : '🌙'}</span>
+    </button>
   )
 }

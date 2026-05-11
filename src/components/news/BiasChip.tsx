@@ -1,11 +1,11 @@
-import { Chip } from '@heroui/react'
+'use client'
 
-const LEAN_CONFIG: Record<string, { color: 'primary' | 'secondary' | 'danger' | 'default'; label: string }> = {
-  Left: { color: 'primary', label: 'Left' },
-  'Center-Left': { color: 'primary', label: 'Center-Left' },
-  Center: { color: 'secondary', label: 'Center' },
-  'Center-Right': { color: 'danger', label: 'Center-Right' },
-  Right: { color: 'danger', label: 'Right' },
+const LEAN_CONFIG: Record<string, { className: string; label: string }> = {
+  Left: { className: 'bg-blue-500/15 text-blue-500', label: 'Left' },
+  'Center-Left': { className: 'bg-blue-400/15 text-blue-400', label: 'Center-Left' },
+  Center: { className: 'bg-purple-500/15 text-purple-500', label: 'Center' },
+  'Center-Right': { className: 'bg-red-400/15 text-red-400', label: 'Center-Right' },
+  Right: { className: 'bg-red-500/15 text-red-500', label: 'Right' },
 }
 
 interface Props {
@@ -18,8 +18,8 @@ export function BiasChip({ lean }: Props) {
   if (!config) return null
 
   return (
-    <Chip size="sm" color={config.color} variant="flat">
+    <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${config.className}`}>
       {config.label}
-    </Chip>
+    </span>
   )
 }

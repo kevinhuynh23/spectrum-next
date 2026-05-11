@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { Card, CardBody } from '@heroui/react'
 import sources from '../../../public/VarietyOfSources.png'
 import analytics from '../../../public/Analytics.png'
 import categories from '../../../public/Categories.png'
@@ -36,30 +35,30 @@ export default function AboutPage() {
       <h2 className="text-2xl font-bold mb-6">What makes us different</h2>
       <div className="grid grid-cols-3 gap-6 mb-12">
         {FEATURES.map(({ image, alt, title, description }) => (
-          <Card key={title}>
-            <CardBody className="text-center">
+          <div key={title} className="border border-default-200 rounded-lg shadow-sm bg-background">
+            <div className="p-4 text-center">
               <div className="flex justify-center mb-4">
                 <Image src={image} alt={alt} width={100} height={100} />
               </div>
               <h3 className="font-semibold mb-2">{title}</h3>
               <p className="text-sm text-default-500">{description}</p>
-            </CardBody>
-          </Card>
+            </div>
+          </div>
         ))}
       </div>
 
       <h2 className="text-2xl font-bold mb-6">Meet the team!</h2>
       <div className="grid grid-cols-2 gap-6">
         {TEAM.map(({ name, href }) => (
-          <Card key={name}>
-            <CardBody className="text-center py-8">
+          <div key={name} className="border border-default-200 rounded-lg shadow-sm bg-background">
+            <div className="p-8 text-center">
               <h3 className="font-semibold text-lg">
                 <a href={href} target="_blank" rel="noopener noreferrer" className="hover:underline text-primary">
                   {name}
                 </a>
               </h3>
-            </CardBody>
-          </Card>
+            </div>
+          </div>
         ))}
       </div>
     </div>

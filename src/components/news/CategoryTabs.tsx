@@ -1,7 +1,5 @@
 'use client'
 
-import { Tabs, Tab } from '@heroui/react'
-
 const CATEGORIES = [
   { key: 'headline', label: 'Headlines' },
   { key: 'politics', label: 'Politics' },
@@ -19,15 +17,24 @@ interface Props {
 
 export function CategoryTabs({ active, onChange }: Props) {
   return (
-    <Tabs
-      selectedKey={active}
-      onSelectionChange={(key) => onChange(key as string)}
-      variant="underlined"
-      classNames={{ tabList: 'mb-4' }}
-    >
-      {CATEGORIES.map(({ key, label }) => (
-        <Tab key={key} title={label} />
-      ))}
-    </Tabs>
+    <div className="flex gap-1 border-b border-default-200 mb-4 overflow-x-auto">
+      {CATEGORIES.map(({ key, label }) => {
+        const isActive = active === key
+        return (
+          <button
+            key={key}
+            type="button"
+            onClick={() => onChange(key)}
+            className={`px-3 py-2 text-sm whitespace-nowrap border-b-2 -mb-px transition-colors ${
+              isActive
+                ? 'border-primary text-foreground font-medium'
+                : 'border-transparent text-default-500 hover:text-foreground'
+            }`}
+          >
+            {label}
+          </button>
+        )
+      })}
+    </div>
   )
 }

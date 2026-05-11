@@ -1,7 +1,7 @@
 'use client'
 
 import { useSession } from 'next-auth/react'
-import { Spinner, Card, CardBody } from '@heroui/react'
+import { Spinner } from '@heroui/react'
 import {
   RadarChart, Radar, PolarGrid, PolarAngleAxis,
   PieChart, Pie, Cell,
@@ -61,14 +61,17 @@ export default function UserDashboard() {
     return week
   })
 
+  const cardCls = 'border border-default-200 rounded-lg shadow-sm bg-background'
+  const cardBodyCls = 'p-4'
+
   return (
     <div>
       <h1 className="text-2xl font-bold mb-1">Hi, {username}!</h1>
       <p className="text-default-500 mb-8">Here are your reading habits for the last week.</p>
 
       <div className="grid grid-cols-1 gap-6">
-        <Card>
-          <CardBody>
+        <div className={cardCls}>
+          <div className={cardBodyCls}>
             <p className="font-semibold mb-4">Weekly Category Trends</p>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={lineData}>
@@ -82,12 +85,12 @@ export default function UserDashboard() {
                 ))}
               </LineChart>
             </ResponsiveContainer>
-          </CardBody>
-        </Card>
+          </div>
+        </div>
 
         <div className="grid grid-cols-3 gap-6">
-          <Card>
-            <CardBody>
+          <div className={cardCls}>
+            <div className={cardBodyCls}>
               <p className="font-semibold mb-4">Category Balance</p>
               <ResponsiveContainer width="100%" height={220}>
                 <RadarChart data={radarData}>
@@ -96,11 +99,11 @@ export default function UserDashboard() {
                   <Radar name="Articles" dataKey="value" fill="#339af0" fillOpacity={0.5} />
                 </RadarChart>
               </ResponsiveContainer>
-            </CardBody>
-          </Card>
+            </div>
+          </div>
 
-          <Card>
-            <CardBody>
+          <div className={cardCls}>
+            <div className={cardBodyCls}>
               <p className="font-semibold mb-4">Category Proportion</p>
               <ResponsiveContainer width="100%" height={220}>
                 <PieChart>
@@ -112,11 +115,11 @@ export default function UserDashboard() {
                   <Tooltip />
                 </PieChart>
               </ResponsiveContainer>
-            </CardBody>
-          </Card>
+            </div>
+          </div>
 
-          <Card>
-            <CardBody>
+          <div className={cardCls}>
+            <div className={cardBodyCls}>
               <p className="font-semibold mb-4">Articles Per Category</p>
               <ResponsiveContainer width="100%" height={220}>
                 <RadialBarChart innerRadius="20%" outerRadius="100%" data={radialData} barSize={10}>
@@ -125,8 +128,8 @@ export default function UserDashboard() {
                   <Tooltip />
                 </RadialBarChart>
               </ResponsiveContainer>
-            </CardBody>
-          </Card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
