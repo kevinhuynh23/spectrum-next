@@ -1,0 +1,62 @@
+[
+  {
+    "number": 835,
+    "title": "Bump @types/node from 22.5.0 to 22.10.0",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/835",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 833,
+    "title": "Bump prosemirror-view from 1.33.9 to 1.37.0",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/833",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 832,
+    "title": "Bump @emotion/react from 11.11.3 to 11.13.5",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/832",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 830,
+    "title": "Bump @apollo/client from 3.11.4 to 3.11.10",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/830",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 815,
+    "title": "Bump prosemirror-transform from 1.9.0 to 1.10.2",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/815",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 813,
+    "title": "Bump @next/font from 14.2.5 to 14.2.15",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/813",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 790,
+    "title": "Bump dayjs from 1.11.12 to 1.11.13",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/790",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 788,
+    "title": "Bump @tiptap/extension-link from 2.2.0 to 2.6.6",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/788",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 786,
+    "title": "Bump @tiptap/react from 2.4.0 to 2.6.6",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/786",
+    "reason": "not-in-main"
+  },
+  {
+    "number": 740,
+    "title": "Bump react-dom and @types/react-dom",
+    "url": "https://github.com/kevinhuynh23/spectrum-next/pull/740",
+    "reason": "not-in-main"
+  }
+]
