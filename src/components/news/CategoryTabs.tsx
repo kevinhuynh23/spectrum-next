@@ -2,12 +2,12 @@
 
 const CATEGORIES = [
   { key: 'headline', label: 'Headlines' },
-  { key: 'politics', label: 'Politics' },
   { key: 'business', label: 'Business' },
-  { key: 'technology', label: 'Tech' },
-  { key: 'science', label: 'Science' },
+  { key: 'entertainment', label: 'Entertainment' },
   { key: 'health', label: 'Health' },
+  { key: 'science', label: 'Science' },
   { key: 'sports', label: 'Sports' },
+  { key: 'technology', label: 'Tech' },
 ] as const
 
 interface Props {

@@ -7,7 +7,7 @@ const METRIC_CATEGORIES = ['sports', 'health', 'business', 'entertainment', 'sci
 
 export const metricsRouter = router({
   trackRead: protectedProcedure
-    .input(z.object({ category: z.string(), source: z.string() }))
+    .input(z.object({ category: z.enum(METRIC_CATEGORIES), source: z.string().max(100) }))
     .mutation(({ input, ctx }) => {
       const userId = Number(ctx.session.user.id)
       ctx.db.insert(readingMetrics).values({ userId, category: input.category, source: input.source }).run()
