@@ -184,7 +184,7 @@ The indigo/violet accent (`#6366f1` / `#8b5cf6`) is the primary brand color in b
 
 1. Install HeroUI, Tailwind CSS v4, next-themes; remove Mantine, Emotion, `@mantine/*`, Apollo Client, Apollo Server, `@as-integrations/next`
 2. Install tRPC v11 (`@trpc/server`, `@trpc/client`, `@trpc/react-query`, `@tanstack/react-query`); install Auth.js v5 (`next-auth@beta`)
-3. Configure Tailwind v4 (`tailwind.config.ts`) and HeroUI plugin
+3. Configure Tailwind v4 (`tailwind.config.ts`) and HeroUI plugin; replace `src/styles/globals.css` with Tailwind CSS entry point; delete `src/styles/Home.module.css`
 4. Scaffold `app/layout.tsx` with providers (HeroUIProvider, ThemeProvider, SessionProvider) and Navbar
 5. Set up tRPC: `server/trpc.ts` → routers → `server/root.ts` → `app/api/trpc/[trpc]/route.ts` → `trpc/client.tsx`
 6. Set up Auth.js v5: `src/auth.ts` → `app/api/auth/[...nextauth]/route.ts` → update `middleware.ts`
