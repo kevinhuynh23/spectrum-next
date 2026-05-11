@@ -16,8 +16,8 @@ export default function HomePage() {
   const trackRead = trpc.metrics.trackRead.useMutation()
 
   function handleRead(cat: string, source: string) {
-    if (!session?.user) return
-    trackRead.mutate({ category: cat, source })
+    if (!session?.user || cat === 'headline') return
+    trackRead.mutate({ category: cat as 'sports' | 'health' | 'business' | 'entertainment' | 'science' | 'technology', source })
   }
 
   return (
