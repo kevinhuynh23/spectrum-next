@@ -1,2 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "@heroui/react/styles";
+
+:root {
+  --color-base: #020617;
+  --color-card: #0f172a;
+  --color-elevated: #1e293b;
+  --color-border: #334155;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #64748b;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-breaking: #f97316;
+}
+
+body {
+  background: var(--color-base);
+  color: var(--color-text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
