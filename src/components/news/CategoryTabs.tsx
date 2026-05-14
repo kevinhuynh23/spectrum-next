@@ -17,24 +17,27 @@ interface Props {
 
 export function CategoryTabs({ active, onChange }: Props) {
   return (
-    <div className="flex gap-1 border-b border-default-200 mb-4 overflow-x-auto">
-      {CATEGORIES.map(({ key, label }) => {
-        const isActive = active === key
-        return (
-          <button
-            key={key}
-            type="button"
-            onClick={() => onChange(key)}
-            className={`px-3 py-2 text-sm whitespace-nowrap border-b-2 -mb-px transition-colors ${
-              isActive
-                ? 'border-primary text-foreground font-medium'
-                : 'border-transparent text-default-500 hover:text-foreground'
-            }`}
-          >
-            {label}
-          </button>
-        )
-      })}
+    <div style={{ background: 'var(--color-card)', borderBottom: '1px solid var(--color-border)' }}>
+      <div className="max-w-screen-xl mx-auto flex overflow-x-auto scrollbar-none px-6">
+        {CATEGORIES.map(({ key, label }) => {
+          const isActive = active === key
+          return (
+            <button
+              key={key}
+              type="button"
+              onClick={() => onChange(key)}
+              className="px-4 py-2.5 text-sm whitespace-nowrap border-b-2 -mb-px transition-colors"
+              style={{
+                borderColor: isActive ? 'var(--color-accent)' : 'transparent',
+                color: isActive ? 'var(--color-text-primary)' : 'var(--color-text-muted)',
+                fontWeight: isActive ? '600' : '500',
+              }}
+            >
+              {label}
+            </button>
+          )
+        })}
+      </div>
     </div>
   )
 }
