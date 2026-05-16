@@ -34,3 +34,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# superpowers
+.superpowers/
+
+# workspace artifacts
+.workspace/
+CLAUDE.md
+pnpm-audit*.json
+results.json
+spectrum.db
