@@ -75,8 +75,8 @@ pnpm build    # Production build
 
 | Router    | Responsibilities                          |
 |-----------|-------------------------------------------|
-| `news`    | Fetch & cache articles from NewsAPI       |
-| `auth`    | User registration, login, session         |
+| `news`    | Fetch articles from NewsAPI               |
+| `auth`    | User registration (signup only)           |
 | `metrics` | Reading history, bias scores, diversity   |
 
 ### Key directories
@@ -84,8 +84,8 @@ pnpm build    # Production build
 ```
 src/
 ├── app/          # Next.js App Router pages
-├── components/   # Shared UI (Navbar, NewsCard, BiasChip, CategoryTabs)
+├── components/   # Shared UI — layout/ (Navbar) and news/ (NewsCard, BiasChip, CategoryTabs)
 ├── server/       # tRPC routers + Drizzle schema
-├── lib/          # bias.ts, newsapi.ts, db.ts
+├── lib/          # bias.ts, newsapi.ts, db.ts, schema.ts
 └── trpc/         # tRPC client setup
 ```
