@@ -57,3 +57,35 @@ pnpm test     # Run Vitest test suite
 pnpm lint     # ESLint (Prettier runs automatically on commit via Husky)
 pnpm build    # Production build
 ```
+
+## Architecture
+
+### Routes
+
+| Route                     | Description                              |
+|---------------------------|------------------------------------------|
+| `/`                       | News feed with category tabs             |
+| `/fullspectrum/[title]`   | Left vs Right comparison for a headline  |
+| `/user`                   | Personal dashboard & reading stats       |
+| `/about`                  | About page                               |
+| `/login`                  | Sign in                                  |
+| `/signup`                 | Create account                           |
+
+### tRPC Routers (`src/server/routers/`)
+
+| Router    | Responsibilities                          |
+|-----------|-------------------------------------------|
+| `news`    | Fetch & cache articles from NewsAPI       |
+| `auth`    | User registration, login, session         |
+| `metrics` | Reading history, bias scores, diversity   |
+
+### Key directories
+
+```
+src/
+├── app/          # Next.js App Router pages
+├── components/   # Shared UI (Navbar, NewsCard, BiasChip, CategoryTabs)
+├── server/       # tRPC routers + Drizzle schema
+├── lib/          # bias.ts, newsapi.ts, db.ts
+└── trpc/         # tRPC client setup
+```
