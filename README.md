@@ -44,9 +44,9 @@ Create a `.env.local` file in the project root:
 | Variable          | Description                               |
 |-------------------|-------------------------------------------|
 | `NEWSAPI_KEY`     | API key from [newsapi.org](https://newsapi.org) |
-| `NEXTAUTH_SECRET` | Random secret — generate with `openssl rand -base64 32` |
+| `NEXTAUTH_SECRET` | Random secret — generate with `openssl rand -base64 32` (NextAuth v5 also accepts `AUTH_SECRET`) |
 | `NEXTAUTH_URL`    | Base URL of the app, e.g. `http://localhost:3000` |
-| `OPENAI_API_KEY`  | OpenAI API key — used for article bias scoring |
+| `OPENAI_API_KEY`  | OpenAI API key — used for article bias scoring (optional — framing analysis disabled if absent) |
 | `DATABASE_URL`    | Path to SQLite DB (optional — defaults to `spectrum.db` in project root) |
 
 ### Run
@@ -76,7 +76,7 @@ pnpm build    # Production build
 | Router    | Responsibilities                          |
 |-----------|-------------------------------------------|
 | `news`    | Fetch articles from NewsAPI               |
-| `auth`    | User registration (signup only)           |
+| `auth`    | User registration via tRPC (sign-in handled by NextAuth) |
 | `metrics` | Reading history, bias scores, diversity   |
 
 ### Key directories
@@ -86,7 +86,7 @@ src/
 ├── app/          # Next.js App Router pages
 ├── components/   # Shared UI — layout/ (Navbar) and news/ (NewsCard, BiasChip, CategoryTabs)
 ├── server/       # tRPC routers + Drizzle schema
-├── lib/          # bias.ts, newsapi.ts, db.ts, schema.ts
+├── lib/          # bias.ts, newsapi.ts, db.ts, schema.ts, bias-ratings.json
 └── trpc/         # tRPC client setup
 ```
 
