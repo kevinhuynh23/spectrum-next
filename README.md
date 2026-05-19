@@ -18,6 +18,6 @@
 - **Bias detection** — every article tagged with a political lean via a curated ratings dataset
 - **Full Spectrum view** — Left vs Right sourcing on the same headline, side by side
 - **Category tabs** — filter by Headlines, Business, Entertainment, Health, Science, Sports, Tech
-- **User dashboard** — reading stats, bias distribution chart, diversity score
-- **Dark/light theme** — system-aware toggle
-- **Auth** — sign up / sign in with NextAuth v5
+- **User dashboard** — reading stats, bias distribution overview, diversity score
+- **Dark/light theme** — manual dark/light toggle
+- **Auth** — sign up / sign in with NextAuth v5 (beta)
