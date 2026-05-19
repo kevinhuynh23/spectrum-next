@@ -89,3 +89,12 @@ src/
 ├── lib/          # bias.ts, newsapi.ts, db.ts, schema.ts
 └── trpc/         # tRPC client setup
 ```
+
+## Contributing
+
+1. Fork the repo and create a branch: `git checkout -b feat/your-feature`
+2. Make your changes — ESLint and Prettier run automatically on commit via Husky
+3. Add or update tests: `pnpm test`
+4. Open a pull request against `main` with a clear description of what and why
+
+Please keep PRs focused — one feature or fix per PR.
