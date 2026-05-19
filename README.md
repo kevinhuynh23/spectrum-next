@@ -26,7 +26,7 @@
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 20+
 - pnpm: `npm install -g pnpm`
 
 ### Install
@@ -46,12 +46,14 @@ Create a `.env.local` file in the project root:
 | `NEWSAPI_KEY`     | API key from [newsapi.org](https://newsapi.org) |
 | `NEXTAUTH_SECRET` | Random secret — generate with `openssl rand -base64 32` |
 | `NEXTAUTH_URL`    | Base URL of the app, e.g. `http://localhost:3000` |
+| `OPENAI_API_KEY`  | OpenAI API key — used for article bias scoring |
+| `DATABASE_URL`    | Path to SQLite DB (optional — defaults to `spectrum.db` in project root) |
 
 ### Run
 
 ```bash
 pnpm dev      # Start dev server at http://localhost:3000
 pnpm test     # Run Vitest test suite
-pnpm lint     # ESLint + Prettier
+pnpm lint     # ESLint (Prettier runs automatically on commit via Husky)
 pnpm build    # Production build
 ```
