@@ -12,3 +12,12 @@
 ![Drizzle](https://img.shields.io/badge/Drizzle-ORM-c5f74f)
 ![Tailwind](https://img.shields.io/badge/Tailwind-v4-38bdf8?logo=tailwindcss)
 ![Vitest](https://img.shields.io/badge/Vitest-passing-green?logo=vitest)
+
+## Features
+
+- **Bias detection** — every article tagged with a political lean via a curated ratings dataset
+- **Full Spectrum view** — Left vs Right sourcing on the same headline, side by side
+- **Category tabs** — filter by Headlines, Business, Entertainment, Health, Science, Sports, Tech
+- **User dashboard** — reading stats, bias distribution chart, diversity score
+- **Dark/light theme** — system-aware toggle
+- **Auth** — sign up / sign in with NextAuth v5
