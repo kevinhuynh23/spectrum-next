@@ -21,3 +21,37 @@
 - **User dashboard** — reading stats, bias distribution overview, diversity score
 - **Dark/light theme** — manual dark/light toggle
 - **Auth** — sign up / sign in with NextAuth v5 (beta)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm: `npm install -g pnpm`
+
+### Install
+
+```bash
+git clone https://github.com/<your-org>/spectrum-next.git
+cd spectrum-next
+pnpm run bootstrap
+```
+
+### Environment variables
+
+Create a `.env.local` file in the project root:
+
+| Variable          | Description                               |
+|-------------------|-------------------------------------------|
+| `NEWSAPI_KEY`     | API key from [newsapi.org](https://newsapi.org) |
+| `NEXTAUTH_SECRET` | Random secret — generate with `openssl rand -base64 32` |
+| `NEXTAUTH_URL`    | Base URL of the app, e.g. `http://localhost:3000` |
+
+### Run
+
+```bash
+pnpm dev      # Start dev server at http://localhost:3000
+pnpm test     # Run Vitest test suite
+pnpm lint     # ESLint + Prettier
+pnpm build    # Production build
+```
