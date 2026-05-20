@@ -1,48 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spectrum
 
-## Prerequisities
+> A news aggregator that surfaces political bias so you can read across the spectrum.
 
-First, install `pnpm`
+| | |
+|---|---|
+| ![Home](public/screenshots/home.png) | ![About](public/screenshots/about.png) |
+| ![Login](public/screenshots/login.png) | ![Sign Up](public/screenshots/signup.png) |
 
-```bash
-npm install pnpm
-```
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![tRPC](https://img.shields.io/badge/tRPC-11-2596be?logo=trpc)
+![Drizzle](https://img.shields.io/badge/Drizzle-ORM-c5f74f)
+![Tailwind](https://img.shields.io/badge/Tailwind-v4-38bdf8?logo=tailwindcss)
+![Vitest](https://img.shields.io/badge/Vitest-passing-green?logo=vitest)
 
-Second, install initial packages
+## Features
 
-```bash
-pnpm run bootstrap
-```
+- **Bias detection** — every article tagged with a political lean via a curated ratings dataset
+- **Full Spectrum view** — Left vs Right sourcing on the same headline, side by side
+- **Category tabs** — filter by Headlines, Business, Entertainment, Health, Science, Sports, Tech
+- **User dashboard** — reading stats, bias distribution overview, diversity score
+- **Dark/light theme** — manual dark/light toggle
+- **Auth** — sign up / sign in with NextAuth v5 (beta)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- pnpm: `npm install -g pnpm`
+
+### Install
 
 ```bash
-pnpm run dev
+git clone https://github.com/<your-org>/spectrum-next.git
+cd spectrum-next
+pnpm run bootstrap
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment variables
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the project root:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+| Variable          | Description                               |
+|-------------------|-------------------------------------------|
+| `NEWSAPI_KEY`     | API key from [newsapi.org](https://newsapi.org) |
+| `NEXTAUTH_SECRET` | Random secret — generate with `openssl rand -base64 32` (NextAuth v5 also accepts `AUTH_SECRET`) |
+| `NEXTAUTH_URL`    | Base URL of the app, e.g. `http://localhost:3000` |
+| `OPENAI_API_KEY`  | OpenAI API key — used for article bias scoring (optional — framing analysis disabled if absent) |
+| `DATABASE_URL`    | Path to SQLite DB (optional — defaults to `spectrum.db` in project root) |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Run
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+pnpm dev      # Start dev server at http://localhost:3000
+pnpm test     # Run Vitest test suite
+pnpm lint     # ESLint (Prettier runs automatically on commit via Husky)
+pnpm build    # Production build
+```
 
-## Learn More
+## Architecture
 
-To learn more about Next.js, take a look at the following resources:
+### Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Route                     | Description                              |
+|---------------------------|------------------------------------------|
+| `/`                       | News feed with category tabs             |
+| `/fullspectrum/[title]`   | Left vs Right comparison for a headline  |
+| `/user`                   | Personal dashboard & reading stats       |
+| `/about`                  | About page                               |
+| `/login`                  | Sign in                                  |
+| `/signup`                 | Create account                           |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### tRPC Routers (`src/server/routers/`)
 
-## Deploy on Vercel
+| Router    | Responsibilities                          |
+|-----------|-------------------------------------------|
+| `news`    | Fetch articles from NewsAPI               |
+| `auth`    | User registration via tRPC (sign-in handled by NextAuth) |
+| `metrics` | Reading history, bias scores, diversity   |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Key directories
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+src/
+├── app/          # Next.js App Router pages
+├── components/   # Shared UI — layout/ (Navbar) and news/ (NewsCard, BiasChip, CategoryTabs)
+├── server/       # tRPC routers + Drizzle schema
+├── lib/          # bias.ts, newsapi.ts, db.ts, schema.ts, bias-ratings.json
+└── trpc/         # tRPC client setup
+```
+
+## Contributing
+
+1. Fork the repo and create a branch: `git checkout -b feat/your-feature`
+2. Make your changes — Prettier runs automatically on commit via Husky; run `pnpm lint` before pushing
+3. Add or update tests: `pnpm test`
+4. Open a pull request against `main` with a clear description of what and why
+
+Please keep PRs focused — one feature or fix per PR.
