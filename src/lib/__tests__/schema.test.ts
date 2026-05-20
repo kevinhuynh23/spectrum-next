@@ -1,18 +1,18 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest'
-import Database from 'better-sqlite3'
-import { drizzle } from 'drizzle-orm/better-sqlite3'
+import { createClient, type Client } from '@libsql/client'
+import { drizzle } from 'drizzle-orm/libsql'
 import { users, readingMetrics } from '../schema'
 import * as schema from '../schema'
 import { eq } from 'drizzle-orm'
 
 describe('Database schema', () => {
+  let client: Client
   let db: ReturnType<typeof drizzle>
-  let sqlite: Database.Database
 
-  beforeAll(() => {
-    sqlite = new Database(':memory:')
-    db = drizzle(sqlite, { schema })
-    sqlite.exec(`
+  beforeAll(async () => {
+    client = createClient({ url: ':memory:' })
+    db = drizzle(client, { schema })
+    await client.executeMultiple(`
       CREATE TABLE users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         email TEXT NOT NULL UNIQUE,
@@ -32,34 +32,35 @@ describe('Database schema', () => {
     `)
   })
 
-  afterAll(() => sqlite.close())
+  afterAll(() => client.close())
 
-  it('inserts and retrieves a user', () => {
-    db.insert(users).values({
+  it('inserts and retrieves a user', async () => {
+    await db.insert(users).values({
       email: 'test@example.com',
       passwordHash: 'hashed',
       username: 'testuser',
       firstName: 'Test',
       lastName: 'User',
-    }).run()
+    })
 
-    const result = db.select().from(users).where(eq(users.email, 'test@example.com')).all()
+    const result = await db.select().from(users).where(eq(users.email, 'test@example.com'))
     expect(result).toHaveLength(1)
     expect(result[0].username).toBe('testuser')
   })
 
-  it('inserts and aggregates reading metrics', () => {
-    const user = db.select().from(users).all()[0]
-    db.insert(readingMetrics).values([
+  it('inserts and aggregates reading metrics', async () => {
+    const allUsers = await db.select().from(users)
+    const user = allUsers[0]
+
+    await db.insert(readingMetrics).values([
       { userId: user.id, category: 'technology', source: 'TechCrunch' },
       { userId: user.id, category: 'technology', source: 'Wired' },
       { userId: user.id, category: 'sports', source: 'ESPN' },
-    ]).run()
+    ])
 
-    const techCount = db.select().from(readingMetrics)
-      .where(eq(readingMetrics.userId, user.id))
-      .all()
-      .filter(m => m.category === 'technology').length
+    const allMetrics = await db.select().from(readingMetrics)
+      .where(eq(readingMetrics.userId, user.id!))
+    const techCount = allMetrics.filter(m => m.category === 'technology').length
 
     expect(techCount).toBe(2)
   })

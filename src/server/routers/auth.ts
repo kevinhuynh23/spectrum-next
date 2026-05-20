@@ -21,12 +21,12 @@ export const authRouter = router({
       if (input.password !== input.passwordConf) {
         throw new TRPCError({ code: 'BAD_REQUEST', message: 'Passwords do not match' })
       }
-      const existing = ctx.db.select().from(users).where(eq(users.email, input.email)).all()
+      const existing = await ctx.db.select().from(users).where(eq(users.email, input.email)).all()
       if (existing.length > 0) {
         throw new TRPCError({ code: 'CONFLICT', message: 'Registration failed. Please try again.' })
       }
       const passwordHash = await bcrypt.hash(input.password, 10)
-      const result = ctx.db
+      const result = await ctx.db
         .insert(users)
         .values({
           email: input.email,
@@ -35,8 +35,7 @@ export const authRouter = router({
           firstName: input.firstName,
           lastName: input.lastName,
         })
-        .run()
-      const [newUser] = ctx.db
+      const [newUser] = await ctx.db
         .select()
         .from(users)
         .where(eq(users.id, Number(result.lastInsertRowid)))

@@ -8,21 +8,22 @@ const METRIC_CATEGORIES = ['sports', 'health', 'business', 'entertainment', 'sci
 export const metricsRouter = router({
   trackRead: protectedProcedure
     .input(z.object({ category: z.enum(METRIC_CATEGORIES), source: z.string().max(100) }))
-    .mutation(({ input, ctx }) => {
+    .mutation(async ({ input, ctx }) => {
       const userId = Number(ctx.session.user.id)
-      ctx.db.insert(readingMetrics).values({ userId, category: input.category, source: input.source }).run()
+      await ctx.db.insert(readingMetrics).values({ userId, category: input.category, source: input.source })
       return true
     }),
 
-  stats: protectedProcedure.query(({ ctx }) => {
+  stats: protectedProcedure.query(async ({ ctx }) => {
     const userId = Number(ctx.session.user.id)
     const counts: Record<string, number> = {}
     for (const cat of METRIC_CATEGORIES) {
-      counts[cat] = ctx.db
+      const result = await ctx.db
         .select()
         .from(readingMetrics)
         .where(and(eq(readingMetrics.userId, userId), eq(readingMetrics.category, cat)))
-        .all().length
+        .all()
+      counts[cat] = result.length
     }
     return { categoryToNumArticles: counts }
   }),
