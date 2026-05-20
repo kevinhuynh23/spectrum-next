@@ -67,8 +67,8 @@ importers:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       openai:
-        specifier: ^6.37.0
-        version: 6.37.0(zod@4.4.3)
+        specifier: ^6.38.0
+        version: 6.38.0(zod@4.4.3)
       react:
         specifier: 19.2.6
         version: 19.2.6
@@ -3307,8 +3307,8 @@ packages:
     resolution: {integrity: sha512-uxyNYDsCh5YIJ780G7hC5OHjVUr9reHsbZNMM80L9tZlTpb3hUzb36KXgW4ZUGtJKQnGA3xegmWg1BxhWV0jJA==}
     hasBin: true
 
-  openai@6.37.0:
-    resolution: {integrity: sha512-0H5dEGFmmLv6KSd0W1w2nyL8WsLkX6yoLeQpU+dZAOuGcany5qkYQMmj35ZrKgb6yiyYqpUzFOpR8mZQkgqeEQ==}
+  openai@6.38.0:
+    resolution: {integrity: sha512-AoMplt2UalrpgUDMh3L09QWjNRlgJPipclQvA6sYAaeF6nHNBMgmikAZGmcYLn8on4d9sQY9Q8bOLfrBS7Lc8g==}
     hasBin: true
     peerDependencies:
       ws: ^8.18.0
@@ -7080,7 +7080,7 @@ snapshots:
     dependencies:
       which-pm-runs: 1.1.0
 
-  openai@6.37.0(zod@4.4.3):
+  openai@6.38.0(zod@4.4.3):
     optionalDependencies:
       zod: 4.4.3
 
