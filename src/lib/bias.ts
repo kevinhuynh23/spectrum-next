@@ -16,7 +16,7 @@ export async function getFramingAnalysis(
   sourceName: string,
 ): Promise<{ lean: BiasLean | null; framing: string }> {
   // Return from cache if already analyzed
-  const cached = db.select().from(biasCache).where(eq(biasCache.articleUrl, articleUrl)).all()
+  const cached = await db.select().from(biasCache).where(eq(biasCache.articleUrl, articleUrl)).all()
   if (cached.length > 0) {
     return { lean: cached[0].lean as BiasLean | null, framing: cached[0].framing }
   }
@@ -55,7 +55,7 @@ export async function getFramingAnalysis(
 
   // Cache the result (even on failure, to avoid hammering the API)
   try {
-    db.insert(biasCache).values({ articleUrl, lean, framing }).run()
+    await db.insert(biasCache).values({ articleUrl, lean, framing })
   } catch {
     // Ignore cache write failures (e.g. duplicate URL race condition)
   }
