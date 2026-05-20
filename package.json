@@ -9,18 +9,21 @@
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "test": "vitest run --passWithNoTests",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@babel/core": "^7.28.5",
     "@heroui/react": "^3.0.4",
+    "@libsql/client": "^0.17.3",
     "@tailwindcss/postcss": "^4.3.0",
     "@tanstack/react-query": "^5.100.9",
     "@trpc/client": "^11.17.0",
     "@trpc/react-query": "^11.17.0",
     "@trpc/server": "^11.17.0",
     "bcryptjs": "^3.0.3",
-    "better-sqlite3": "^12.9.0",
     "dayjs": "^1.11.19",
     "drizzle-orm": "^0.45.2",
     "framer-motion": "^12.38.0",
@@ -39,7 +42,6 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/bcryptjs": "^3.0.0",
-    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "22.10.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
@@ -65,7 +67,6 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "better-sqlite3",
       "esbuild",
       "sharp",
       "unrs-resolver"
