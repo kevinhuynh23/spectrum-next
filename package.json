@@ -15,7 +15,7 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
-    "@babel/core": "^7.28.5",
+    "@babel/core": "^7.29.6",
     "@heroui/react": "^3.0.5",
     "@libsql/client": "^0.17.3",
     "@tailwindcss/postcss": "^4.3.0",
