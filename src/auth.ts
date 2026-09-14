@@ -1,6 +1,7 @@
 import NextAuth from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import { authorizeUser } from '@/lib/auth-utils'
+import { checkRateLimit, clientIpFromRequest } from '@/lib/rate-limit'
 
 export const { auth, signIn, signOut, handlers } = NextAuth({
   providers: [
@@ -12,6 +13,11 @@ export const { auth, signIn, signOut, handlers } = NextAuth({
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) return null
+        // Blunt credential-stuffing: 10 login attempts per IP per 10 minutes.
+        // Rate-limited attempts fail exactly like bad credentials (null).
+        const ip = await clientIpFromRequest()
+        const rl = checkRateLimit({ key: `auth:login:${ip}`, limit: 10, windowMs: 10 * 60 * 1000 })
+        if (!rl.ok) return null
         return authorizeUser(
           credentials.email as string,
           credentials.password as string,
