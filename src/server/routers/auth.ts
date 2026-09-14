@@ -4,6 +4,7 @@ import { eq } from 'drizzle-orm'
 import { users } from '@/lib/schema'
 import { publicProcedure, router } from '../trpc'
 import { TRPCError } from '@trpc/server'
+import { checkRateLimit, clientIpFromRequest } from '@/lib/rate-limit'
 
 export const authRouter = router({
   signup: publicProcedure
@@ -18,6 +19,15 @@ export const authRouter = router({
       })
     )
     .mutation(async ({ input, ctx }) => {
+      // Blunt mass-registration: 5 attempts per IP per 10 minutes.
+      const ip = await clientIpFromRequest()
+      const rl = checkRateLimit({ key: `auth:signup:${ip}`, limit: 5, windowMs: 10 * 60 * 1000 })
+      if (!rl.ok) {
+        throw new TRPCError({
+          code: 'TOO_MANY_REQUESTS',
+          message: 'Too many signup attempts. Please try again later.',
+        })
+      }
       if (input.password !== input.passwordConf) {
         throw new TRPCError({ code: 'BAD_REQUEST', message: 'Passwords do not match' })
       }
@@ -40,6 +50,7 @@ export const authRouter = router({
         .from(users)
         .where(eq(users.id, Number(result.lastInsertRowid)))
         .all()
-      return newUser
+      // Never return credential material (passwordHash) to the client.
+      return { id: newUser.id, email: newUser.email, username: newUser.username }
     }),
 })
